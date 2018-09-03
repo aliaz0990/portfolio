@@ -1,0 +1,33 @@
+.container-fluid.nopadding
+	.row.nopadding
+		.col-md-5.col-lg-4.nopadding
+			= image_tag("personas.png", class: "img-responsive img-personal")
+		.col-md-7.col-lg-8.bg-front.nopadding
+			.row.nopadding
+				.col-md-10.col-lg-10.title-head
+					%h2 Alirio Jose Diaz Sanchez
+				.col-md-2.col-lg-2.hvr-sweep-to-right.cv-icon.pd-off.hidden-xs.hidden-sm
+					%a{href: "#"}
+						%i.fas.fa-file-download.fa-3x.cs-icon{"aria-hidden" => "true", title: "Descargar CV.PDF"}
+			.row.nopadding
+				.col-md-12.sb-title-head
+					%h3 Experimenta
+			%ul.row.nopadding{id: "nav"}
+				%li.col-xs-4.col-sm-2.menu-item.home.hvr-sink{id: "home"}
+					%i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
+					%span Inicio
+				%li.col-xs-4.col-sm-2.menu-item.resume.hvr-sink{id: "resume"}
+					%i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
+					%span Resumen
+				%li.col-xs-4.col-sm-2.menu-item.portfolio.hvr-sink{id: "portfolio"}
+					%i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
+					%span Portfalio
+				%li.col-xs-4.col-sm-2.menu-item.contact.hvr-sink{id: "contact"}
+					%i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
+					%span Contacto
+				%li.col-xs-4.col-sm-2.menu-item.feedback.hvr-sink{id: "feedback"}
+					%i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
+					%span FeedBack
+				%li.col-xs-4.col-sm-2.menu-item.blog.hvr-sink{id: "payments"}
+					%i.fas.fa-donate.fa-2x{"aria-hidden" => "true"}
+					%span Payments

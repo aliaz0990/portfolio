@@ -1,0 +1,114 @@
+.nopadding{
+margin: 0 !important;
+padding: 0 !important;
+}
+
+.img-personal {
+  min-height: 360px;
+}
+
+.title-head {
+  color: $white-grey;
+  max-height: 120px;
+  min-height: 120px;
+  overflow: hidden;
+  padding: 17px 40px 18px;
+
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+.cv-icon {
+  background: rgba(0, 0, 0, .5);
+  max-height: 120px;
+  min-height: 120px;
+  text-align: center;
+
+  .fa-download {
+    color: $white-grey;
+  }
+}
+
+.hvr-sweep-to-right {
+  &:hover {
+    .fa-download {
+      color: $white;
+    }
+  }
+
+  &::before {
+    background: rgba(255, 255, 255, .3);
+  }
+
+}
+
+.cs-icon {
+  color: $white;
+  padding-top: 34px;
+}
+
+.sb-title-head {
+  background: rgba(0, 0, 0, .7);
+  color: $white-grey;
+  max-height: 120px;
+  min-height: 120px;
+  padding: 23px 40px 34px;
+
+  h3 {
+    font-size: 3.1rem;
+  }
+}
+
+ul {
+  background: rgba(0, 0, 0, .7);
+  list-style: none;
+}
+
+.menu-item {
+  color: $white;
+  min-height: 120px;
+  padding-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+
+  span {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: $semibold;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+.home {
+  background-color: $green !important;
+}
+
+.resume {
+  background-color: $blue !important;
+}
+
+.portfolio {
+  background-color: $lilac !important;
+}
+
+.contact {
+  background-color: $orange !important;
+}
+
+.feedback {
+  background-color: $red !important;
+}
+
+.blog {
+  background-color: $yellow !important;
+}
+
+.bg-front {
+	background: url('bg-front.jpg');
+  background-size: cover;
+}

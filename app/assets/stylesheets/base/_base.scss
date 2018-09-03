@@ -1,0 +1,58 @@
+html,
+body,
+main {
+  background-image: url('backgroundBody.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+main {
+  padding: 20px 50px 0;
+
+  @include respond_to (sm) {
+    padding: 0;
+  }
+
+  @include respond_to (xs) {
+    padding: 0;
+  }
+}
+
+html {
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    font-size: $base-font-size;
+  }
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    font-size: 11px;
+  }
+
+  @include respond-to(md) {
+    @include transition(all .3s ease);
+    font-size: 6.5px;
+  }
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    font-size: 11px;
+  }
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    font-size: 10px;
+  }
+}
+
+body {
+  font-family: $marvel;
+}
+
+.boxed {
+	display: block;
+	position: relative;
+	margin-top: 1.5%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
