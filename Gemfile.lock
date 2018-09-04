@@ -218,8 +218,6 @@ GEM
       ffi (~> 1.9.6)
       sass (>= 3.3.0)
     sexp_processor (4.11.0)
-    snapsvg-rails (0.2.0)
-      railties (>= 3)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -279,7 +277,6 @@ DEPENDENCIES
   rspec-rails (~> 3.5)
   rubocop
   sass-rails
-  snapsvg-rails (~> 0.2.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
