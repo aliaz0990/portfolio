@@ -1,0 +1,57 @@
+.port-filter-light ul li a {
+    background: $white-grey;
+    color: $red;
+
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+}
+
+.port-filter {
+  ul {
+    list-style: none;
+    padding: 0;
+    background: none;
+  }
+  ul, li {
+    display: inline-block;
+  }
+  ul, li, a {
+    position: relative;
+    padding: 12px 14px;
+    margin-right: 1px;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    text-decoration: none;
+  }
+}
+
+.divide-white {
+  height: 40px;
+}
+
+.grid {
+  padding: 0;
+  .row {  margin-left:0;  margin-right:0;
+    .grid-item {
+      border: none;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}
+
+.grid {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}

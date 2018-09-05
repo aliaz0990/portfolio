@@ -43,6 +43,11 @@ gem 'hover-rails'
 #---> HTML
 gem 'haml-rails', "~> 1.0"
 
+#---> Utilities
+gem 'jquery-rails'
+gem 'jquery-turbolinks'
+gem 'wow-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: :mri

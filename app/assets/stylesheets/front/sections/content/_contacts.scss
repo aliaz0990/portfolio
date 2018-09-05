@@ -1,0 +1,19 @@
+.contact-data {
+  .font-subtitle {
+    @include respond-to(xs) {
+      @include transition(all .3s ease);
+      padding-bottom: 0;
+      padding-top: 10px;
+    }
+  }
+
+  .font-p {
+    margin: 8px 0;
+
+    @include respond-to(xs) {
+      @include transition(all .3s ease);
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+}

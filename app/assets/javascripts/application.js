@@ -13,6 +13,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery
+//= require bootstrap
+//= require wow
+//= require jquery_ujs
 //= require snap-svg
 //= require_tree .
 

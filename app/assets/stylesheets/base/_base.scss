@@ -56,3 +56,50 @@ body {
 	margin-right: 3.5%;
 	margin-left: 3.5%;
 }
+
+.nopadding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.padding-50 {
+  padding: 35px 35px 40px;
+}
+
+main {
+  @extend .container;
+  width: 100%;
+}
+
+.title-text {
+  font-size: 3.2rem;
+  font-weight: $normal;
+  line-height: 2.2rem;
+  margin: 0;
+}
+
+.font-subtitle {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: $bold;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.font-p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 2rem;
+  font-weight: $bold;
+  letter-spacing: 3px;
+}
+
+.carousel-indicators.customized-experience {
+  bottom: -40px;
+}
