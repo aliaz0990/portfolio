@@ -1,0 +1,79 @@
+.container-fluid.nopadding
+  #home-section
+  #resume-section
+  #portfolio-section
+  #contact-section
+  #feedback-section
+  #payments-section
+
+:javascript
+  var  home = "#{j render 'front/sections/content/home'}"
+  var resume = "#{j render 'front/sections/content/resume'}"
+  var portfolio = "#{j render 'front/sections/content/portfolio'}"
+  var contact = "#{j render 'front/sections/content/contact'}"
+  var feedback = "#{j render 'front/sections/content/feedback'}"
+  var payments = "#{j render 'front/sections/content/payments'}"
+
+  $(window).on("load", function() {
+    $('#home-section').append(home);
+  });
+
+  $('#home').click(function() {
+    $('#home-section').append(home);
+
+    $('#resume-section').html('');
+    $('#portfolio-section').html('');
+    $('#contact-section').html('');
+    $('#feedback-section').html('');
+    $('#payments-section').html('');
+  });
+
+  $('#resume').click(function() {
+    $('#resume-section').append(resume);
+
+    $('#home-section').html('');
+    $('#portfolio-section').html('');
+    $('#contact-section').html('');
+    $('#feedback-section').html('');
+    $('#payments-section').html('');
+  });
+
+  $('#portfolio').click(function() {
+    $('#portfolio-section').append(portfolio);
+
+    $('#home-section').html('');
+    $('#resume-section').html('');
+    $('#contact-section').html('');
+    $('#feedback-section').html('');
+    $('#payments-section').html('');
+  });
+
+  $('#contact').click(function() {
+    $('#contact-section').append(contact);
+
+    $('#home-section').html('');
+    $('#resume-section').html('');
+    $('#portfolio-section').html('');
+    $('#feedback-section').html('');
+    $('#payments-section').html('');
+  });
+
+  $('#feedback').click(function() {
+    $('#feedback-section').append(feedback);
+    
+    $('#home-section').html('');
+    $('#resume-section').html('');
+    $('#contact-section').html('');
+    $('#portfolio-section').html('');
+    $('#payments-section').html('');
+  });
+
+  $('#payments').click(function() {
+    $('#payments-section').append(payments);
+
+    $('#home-section').html('');
+    $('#resume-section').html('');
+    $('#contact-section').html('');
+    $('#portfolio-section').html('');
+    $('#feedback-section').html('');
+  });
