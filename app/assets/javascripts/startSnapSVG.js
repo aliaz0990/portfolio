@@ -1,6 +1,6 @@
 //Snap SVG Header Animation
 function snapSVG(){
-	var l = Snap('#logo');
+  var l = Snap('#logo');
 
   setTimeout( function() {
     // modify this one line below, and see the result !
@@ -28,6 +28,6 @@ function snapSVG(){
       logoRandom = '';
     }
 
-  	}, 800 
+    }, 800 
   );
 };
