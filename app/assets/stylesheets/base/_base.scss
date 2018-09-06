@@ -1,11 +1,3 @@
-html,
-body,
-main {
-  background-image: url('backgroundBody.jpg');
-  background-size: cover;
-  height: 100%;
-}
-
 main {
   padding: 20px 50px 0;
 
@@ -55,6 +47,7 @@ body {
 	margin-top: 2%;
 	margin-right: 3.5%;
 	margin-left: 3.5%;
+  background-image: url('backgroundBody.jpg');
 }
 
 .nopadding {
