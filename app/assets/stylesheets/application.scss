@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Marvel');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+// Plugins
+@import 'front/plugins/bootstrap_and_overrides';
+@import 'front/plugins/fontawesome';
+@import 'front/plugins/hover-min';
+@import 'front/plugins/animate';
+@import 'front/plugins/circle';
+
+// Variables
+@import 'front/utils/variables';
+@import 'front/utils/mixins';
+
+// Base
+@import 'base/base';
+
+// Sections
+//>>>>> Header
+@import 'front/sections/header/header';
