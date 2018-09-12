@@ -16,9 +16,11 @@
             Bienvenido
             %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hola Mundo!!\", \"BoB!!\", \"Usuario!!\", \"Todo el Mundo!!\"]"}
       %ul.row.nopadding{id: "nav"}
-        %li.col-xs-4.col-sm-2.menu-item.home.hvr-sink{id: "home"}
-          %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
-          %span Inicio
+        = link_to '/' do
+          %li#home.col-xs-4.col-sm-2.menu-item.home.hvr-sink
+            %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
+            %span Inicio
+
         %li.col-xs-4.col-sm-2.menu-item.resume.hvr-sink{id: "resume"}
           %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
           %span Resumen

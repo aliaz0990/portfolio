@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
   root 'front#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/resume', to: 'front#resume'
+  get '/portfolio', to: 'front#portfolio'
+  get '/contact', to: 'front#contact'
+  get '/feedback', to: 'front#feedback'
+  get '/payments', to: 'front#payments'
 end
