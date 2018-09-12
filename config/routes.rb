@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'front#index'
-  get 'front/resumen'
-  get 'front/portfolio'
-  get 'front/contact'
-  get 'front/feedback'
-  get 'front/payments'
+  get '/resume', to: 'front#resume'
+  get '/portfolio', to: 'front#portfolio'
+  get '/contact', to: 'front#contact'
+  get '/feedback', to: 'front#feedback'
+  get '/payments', to: 'front#payments'
 end

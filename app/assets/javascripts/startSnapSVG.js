@@ -4,7 +4,7 @@ function snapSVG(){
 
   setTimeout( function() {
     // modify this one line below, and see the result !
-    var logoTitle = 'Alirio Jose Diaz Sanchez';
+    var logoTitle = 'Nombre de alguien';
     var logoRandom = '';
     var logoTitleContainer = l.text(0, 50, '');
     var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";

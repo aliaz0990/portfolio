@@ -3,7 +3,8 @@ class FrontController < ApplicationController
   def index
   end
 
-  def resumen
+  def resume
+    render "front/sections/content/resume/resume"
   end
 
   def portfolio
