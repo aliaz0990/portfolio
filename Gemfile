@@ -54,8 +54,8 @@ group :development, :test do
 
   gem 'sqlite3'
   gem 'rubocop', require: false
-
   gem 'rspec-rails', '~> 3.5'
+  gem "factory_bot_rails"
   gem 'capybara'
   gem 'database_cleaner'
 end
