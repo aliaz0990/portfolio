@@ -25,4 +25,6 @@ function animatedHeader(){
   snapSVG();
 };
 
-window.onload = animatedHeader;
+$(document).on('turbolinks:load', function() {
+  animatedHeader();
+});
