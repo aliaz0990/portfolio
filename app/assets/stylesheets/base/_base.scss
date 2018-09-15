@@ -72,7 +72,7 @@ main {
 }
 
 .font-subtitle {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: $bold;
   letter-spacing: 2px;
@@ -82,9 +82,13 @@ main {
 }
 
 .font-p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+
+.font-span {
+  font-size: 1.4rem;
 }
 
 .footer-text {
