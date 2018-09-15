@@ -31,6 +31,18 @@
   }
 }
 
+.btn.btn-collapse {
+  .icon::before {
+    content: '\f068';
+  }
+}
+
+.btn.btn-collapse.collapsed {
+  .icon::before {
+    content: '\f067';
+  }
+}
+
 .padding-resume {
   padding: 35px 35px 0px;
 }
