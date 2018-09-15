@@ -26,5 +26,5 @@ function animatedHeader(){
 };
 
 $(document).on('turbolinks:load', function() {
-    animatedHeader();
-  });
+  animatedHeader();
+});
