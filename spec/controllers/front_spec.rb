@@ -9,4 +9,11 @@ describe FrontController do
     end
   end
 
+  describe "GET resume" do
+  	it "renders the index view" do
+  		get :resume
+  		expect(get: "/resume").to route_to(controller: "front", action: "resume")
+  	end
+  end
+
 end
