@@ -1,22 +1,15 @@
+# frozen_string_literal: true
+
 class FrontController < ApplicationController
-  
-  def index
-  end
+  def index; end
 
-  def resume
-    render "front/sections/content/resume/resume"
-  end
+  def resume; end
 
-  def portfolio
-  end
-  
-  def contact
-  end
+  def portfolio; end
 
-  def feedback
-  end
+  def contact; end
 
-  def payments
-  end
+  def feedback; end
 
+  def payments; end
 end
