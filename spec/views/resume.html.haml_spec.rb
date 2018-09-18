@@ -3,7 +3,8 @@
 require 'spec_helper'
 
 describe 'front/resume.html.haml' do
-  it 'rendering resume' do
+  it 'verify page render' do
     render
+    expect(rendered).to match('resume')
   end
 end
