@@ -1,0 +1,72 @@
+.icons-padding {
+  padding: 0 0 20px 0;
+}
+
+.sub-description-resume {
+  margin: 20px 0 30px;
+
+  h5 {
+    color: $red;
+  }
+
+  p.line-red {
+    border-bottom: 3px solid $red;
+    margin: 0 40% 0 40%;
+  }
+}
+
+.btn.disabled.btn-cs {
+  pointer-events: none;
+  opacity: 1;
+}
+
+.btn-collapse {
+  color: $grey;
+  border-color: $grey;
+  margin-left: 2%;
+
+  &:hover, &:active, &:focus {
+    color: $red;
+    border-color: $red;
+  }
+}
+
+.btn.btn-collapse {
+  .icon::before {
+    content: '\f068';
+  }
+}
+
+.btn.btn-collapse.collapsed {
+  .icon::before {
+    content: '\f067';
+  }
+}
+
+.padding-resume {
+  padding: 35px 35px 0px;
+}
+
+.card {
+  display: inline-grid;
+}
+
+.card-body {
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+.fetch-resume {
+  font-size: 1.6rem;
+}
+
+.border-line {
+  border: 1px solid $red;
+}
+
+.padding-item {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
