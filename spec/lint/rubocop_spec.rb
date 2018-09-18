@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe 'rubocop' do
+RSpec.describe 'Rubocop' do
   subject(:report) { `rubocop` }
 
   it 'has no offenses' do
