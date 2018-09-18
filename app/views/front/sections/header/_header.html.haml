@@ -26,9 +26,11 @@
             %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
             %span Resumen
 
-        %li.col-xs-4.col-sm-2.menu-item.portfolio.hvr-sink{id: "portfolio"}
-          %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
-          %span Portfalio
+        = link_to 'portfolio' do
+          %li#portfolio.col-xs-4.col-sm-2.menu-item.portfolio.hvr-sink
+            %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
+            %span Portfalio
+
         %li.col-xs-4.col-sm-2.menu-item.contact.hvr-sink{id: "contact"}
           %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
           %span Contacto
