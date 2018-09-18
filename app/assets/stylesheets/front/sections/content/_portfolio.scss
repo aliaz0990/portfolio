@@ -1,3 +1,48 @@
 .animation {
   padding: 15px;
 }
+
+.sub-description-portfolio {
+  margin: 20px 0 30px;
+
+  h5 {
+    color: $red;
+  }
+
+  p.line-red {
+    border-bottom: 3px solid $red;
+    margin: 0 40% 0 40%;
+  }
+}
+
+.port-filter {
+  ul {
+    display: contents;
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a{
+        position: relative;
+        text-decoration: none;
+        background: $white-grey;
+        color: $black;
+        padding: 12px 24px;
+        letter-spacing: 1px;
+        margin-right: 1px;
+
+        &:hover, &:focus, &:active {
+          background: $red;
+          color: $white;
+          transition: all 0.35s ease-in-out;
+          -moz-transition: all 0.35s ease-in-out;
+          -webkit-transition: all 0.35s ease-in-out;
+          -o-transition: all 0.35s ease-in-out;
+          -ms-transition: all 0.35s ease-in-out;
+        }
+      }
+    }
+  }
+}
