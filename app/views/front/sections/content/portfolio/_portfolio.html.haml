@@ -66,7 +66,7 @@
           %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.uiux'}
             UI/UX
   .col-md-12.nopadding
-    .padding-page-parts.wow.fadeInDown
+    .padding-page-parts.container
       .row.grid
         .col-md-4.element-item.website{'data-category': 'website'}
           = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
@@ -88,13 +88,6 @@
           = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
         .col-md-4.element-item.website{'data-category': 'website'}
           = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
-  .col-md-12.noppading
-    .padding-page-parts.wow.fadeInDown
-      %h3.title-text.text-center
-        PROJECTS
-      .sub-description-portfolio.text-center
-        %h5.font-subtitle
-          WORKING HARD AND MAKING THE SUCCESS
 :javascript
   var buttonFilter;
 
@@ -102,11 +95,24 @@
   var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows',
+    percentPosition: true,
+    transformsEnabled: false,
+    animationOptions: {
+      duration: 10,
+      easing: 'linear',
+      queue: false
+    } ,
+
     filter: function() {
       var $this = $(this);
       var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
       return buttonResult;
     }
+
+  });
+
+  $grid.imagesLoaded().progress(function (){
+    $grid.isotope('layout');
   });
 
   $('#filters').on( 'click', 'button', function() {

@@ -19,6 +19,7 @@
 //= require snap-svg
 //= require isotope
 //= require wow.min
+//=require imagesloaded.pkgd.min
 //= require_tree .
 
 function animatedHeader(){
