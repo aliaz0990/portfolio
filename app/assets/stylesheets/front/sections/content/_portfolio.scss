@@ -15,34 +15,36 @@
   }
 }
 
-.port-filter {
-  ul {
-    display: contents;
-    list-style: none;
-    padding: 0;
+.btn-portfolio.active {
+  background: $red;
+  color: $white;
+}
 
-    li {
-      display: inline-block;
+.btn-portfolio {
+  background: $white-grey;
+  color: $black;
+  padding: 12px 24px;
+  letter-spacing: 1px;
+  margin-right: 1px;
 
-      a{
-        position: relative;
-        text-decoration: none;
-        background: $white-grey;
-        color: $black;
-        padding: 12px 24px;
-        letter-spacing: 1px;
-        margin-right: 1px;
-
-        &:hover, &:focus, &:active {
-          background: $red;
-          color: $white;
-          transition: all 0.35s ease-in-out;
-          -moz-transition: all 0.35s ease-in-out;
-          -webkit-transition: all 0.35s ease-in-out;
-          -o-transition: all 0.35s ease-in-out;
-          -ms-transition: all 0.35s ease-in-out;
-        }
-      }
-    }
+  &:hover, &:focus, &:active {
+    background: $red;
+    color: $white;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
   }
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-item {
+  margin: 10px 0;
+  transition: background 1s, box-shadow 1s;
 }

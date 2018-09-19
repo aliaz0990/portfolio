@@ -53,24 +53,72 @@
           WORKING HARD AND MAKING THE SUCCESS
   .col-md-12.noppading
     .padding-page-parts.wow.fadeInDown
-      #isotope-filters.text-center.port-filter
-        %ul
-          %li.font-p
-            %a{href: '#'}
-              All
-          %li.font-p
-            %a{href: '#'}
-              WEBSITES
-          %li.font-p
-            %a{href: '#'}
-              E-COMMERCE
-          %li.font-p
-            %a{href: '#'}
-              WEB_APPS
-          %li.font-p
-            %a{href: '#'}
-              UI/UX
+      .filters
+        #filters.button-group.text-center
+          %button.btn.btn-portfolio.active.font-p{type: 'button', 'data-filter': '*'}
+            ALL
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.website'}
+            WEBSITE
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.e-commerce'}
+            E-COMMERCE
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.web-apps'}
+            WEB-APPS
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.uiux'}
+            UI/UX
   .col-md-12.nopadding
-    .wow.fadeInDown
-      .row
-        .container-fluid.text-center{style: 'height: 400px;'}
+    .padding-page-parts.wow.fadeInDown
+      .row.grid
+        .col-md-4.element-item.website{'data-category': 'website'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.web-apps{'data-category': 'web-apps'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.uiux{'data-category': 'uiux'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.website{'data-category': 'website'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.website{'data-category': 'website'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.web-apps{'data-category': 'web-apps'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.uiux{'data-category': 'uiux'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+        .col-md-4.element-item.website{'data-category': 'website'}
+          = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive')
+  .col-md-12.noppading
+    .padding-page-parts.wow.fadeInDown
+      %h3.title-text.text-center
+        PROJECTS
+      .sub-description-portfolio.text-center
+        %h5.font-subtitle
+          WORKING HARD AND MAKING THE SUCCESS
+:javascript
+  var buttonFilter;
+
+  //init Isotope
+  var $grid = $('.grid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows',
+    filter: function() {
+      var $this = $(this);
+      var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+      return buttonResult;
+    }
+  });
+
+  $('#filters').on( 'click', 'button', function() {
+    buttonFilter = $( this ).attr('data-filter');
+    $grid.isotope();
+  });
+
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.active').removeClass('active');
+      $( this ).addClass('active');
+    });
+  });
+

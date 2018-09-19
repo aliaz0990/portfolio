@@ -17,7 +17,7 @@
 //= require bootstrap
 //= require jquery_ujs
 //= require snap-svg
-//= require isotope.pkgd.min
+//= require isotope
 //= require wow.min
 //= require_tree .
 
@@ -28,5 +28,5 @@ function animatedHeader(){
 
 $(document).on('turbolinks:load', function() {
   animatedHeader();
-  new WOW().init();
+  //new WOW().init();
 });
