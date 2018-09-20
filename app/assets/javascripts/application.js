@@ -29,5 +29,5 @@ function animatedHeader(){
 
 $(document).on('turbolinks:load', function() {
   animatedHeader();
-  //new WOW().init();
+  new WOW().init();
 });
