@@ -1,4 +1,4 @@
-function startIso(){
+function startIsotope(){
   var buttonFilter;
   //init Isotope
   var $grid = $('.grid').isotope({
