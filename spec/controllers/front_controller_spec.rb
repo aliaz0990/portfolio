@@ -16,4 +16,11 @@ describe FrontController, type: :routing do
       expect(get('/resume')).to route_to('front#resume')
     end
   end
+
+  describe 'GET portfolio' do
+    it 'route portfolio view' do
+      get :portfolio
+      expect(get('/portfolio')).to route_to('front#portfolio')
+    end
+  end
 end

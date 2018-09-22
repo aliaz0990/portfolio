@@ -1,0 +1,145 @@
+.sub-description-portfolio {
+  margin: 20px 0 30px;
+
+  h5 {
+    color: $red;
+  }
+
+  p.line-red {
+    border-bottom: 3px solid $red;
+    margin: 0 40% 0 40%;
+  }
+}
+
+.btn-portfolio.active {
+  background: $red;
+  color: $white;
+}
+
+.btn-portfolio {
+  background: $white-grey;
+  color: $black;
+  padding: 12px 24px;
+  letter-spacing: 1px;
+  margin-right: 1px;
+
+  &:hover, &:focus, &:active {
+    background: $red;
+    color: $white;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+  }
+}
+
+.grid {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-item {
+  margin: 10px 0;
+  padding: 0 10px;
+  transition: background 1.7s, box-shadow 1.7s;
+}
+
+.row.grid {
+  padding-bottom: 5%;
+}
+
+.element-item .hover-content {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+  &:hover {
+    img {
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  }
+}
+
+.animation-l {
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.element-item .hover-content .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  text-align: center;
+  color: $white;
+  opacity: 0;
+  background: rgba(193, 60, 60, 0.8);
+
+  &:hover {
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+
+    .icon-link {
+      -webkit-animation: fadeInRight 0.7s;
+      animation: fadeInRight 0.7s;
+    }
+
+    .text-hover {
+        h5 {
+          -webkit-animation: fadeInup 0.7s;
+          animation: fadeInUp 0.7s;
+        }
+
+        p {
+          -webkit-animation: fadeInUp 1s;
+          animation: fadeInUp 1s;
+        }
+    }
+  }
+}
+
+.overlay.animation {
+  padding: 10% 5%;
+}
+
+.text-hover  {
+  h5.font-p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.1rem;
+  }
+
+  p.font-p{
+    font-size: 2rem;
+  }
+}
+
+.icon-link {
+  a {
+    color: $white;
+
+    &:hover, &:focus {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}

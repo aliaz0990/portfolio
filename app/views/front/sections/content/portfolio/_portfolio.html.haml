@@ -1,0 +1,160 @@
+#portfolio.row.nopadding.skin
+  .col-md-12.nopadding
+    .padding-50.wow.slideInDown
+      .row.nopadding
+        .col-md-12.nopadding
+          %h3.title-text Mi Portafolio
+        .sub-description
+          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %p.font-p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.
+  .col-md-12.noppading.w-grey
+    .padding-50.wow.slideInDown
+      .container-fluid.noppading
+        .row
+          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+            .animation.text-center
+              .icon
+                %i.far.fa-images.fa-cs
+              .integers.font-subtitle 
+                0
+              .font-p
+                WEBSITES
+          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+            .animation.text-center
+              .icon
+                %i.fas.fa-shopping-cart.fa-cs
+              .integers.font-subtitle 
+                0
+              .font-p
+                E-COMMERCE
+          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+            .animation.text-center
+              .icon
+                %i.fas.fa-laptop-code.fa-cs
+              .integers.font-subtitle
+                0
+              .font-p
+                WEB-APPS
+          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+            .animation.text-center
+              .icon
+                %i.far.fa-object-group.fa-cs
+              .integers.font-subtitle 
+                0
+              .font-p
+                UI/UX
+  .col-md-12.noppading
+    .padding-page-parts.wow.slideInDown
+      %h3.title-text.text-center
+        PROJECTS
+      .sub-description-portfolio.text-center
+        %h5.font-subtitle
+          WORKING HARD AND MAKING THE SUCCESS
+  .col-md-12.noppading
+    .padding-page-parts.wow.slideInDown
+      .filters
+        #filters.button-group.text-center
+          %button.btn.btn-portfolio.active.font-p{type: 'button', 'data-filter': '*'}
+            ALL
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.website'}
+            WEBSITE
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.e-commerce'}
+            E-COMMERCE
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.web-apps'}
+            WEB-APPS
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.uiux'}
+            UI/UX
+  .col-md-12.nopadding
+    .padding-page-parts.wow.slideInUp
+      .row.grid
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  website
+        .col-xs-12.col-sm-6.col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  e-commerce
+        .col-xs-12.col-sm-6.col-md-4.element-item.web-apps{'data-category': 'web-apps'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  web-app
+        .col-xs-12.col-sm-6.col-md-4.element-item.uiux{'data-category': 'uiux'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  ui/ux
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  website
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  website
+        .col-xs-12.col-sm-6.col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  e-commerce
+        .col-xs-12.col-sm-6.col-md-4.element-item.web-apps{'data-category': 'web-apps'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  web-app
+        .col-xs-12.col-sm-6.col-md-4.element-item.uiux{'data-category': 'uiux'}
+          .hover-content
+            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: '#'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p titulo del proyecto
+                %p.font-p  ui/ux

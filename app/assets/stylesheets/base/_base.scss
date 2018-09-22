@@ -39,6 +39,7 @@ html {
 
 body {
   font-family: $marvel;
+  height: 100%;
 }
 
 .boxed {
@@ -99,4 +100,8 @@ main {
 
 .carousel-indicators.customized-experience {
   bottom: -40px;
+}
+
+.padding-page-parts {
+  padding: 35px 35px 0px;
 }

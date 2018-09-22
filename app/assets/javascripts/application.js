@@ -15,9 +15,11 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap
-//= require wow
 //= require jquery_ujs
 //= require snap-svg
+//= require isotope
+//= require wow.min
+//= require imagesloaded.pkgd.min
 //= require_tree .
 
 function animatedHeader(){
@@ -27,4 +29,5 @@ function animatedHeader(){
 
 $(document).on('turbolinks:load', function() {
   animatedHeader();
+  new WOW().init();
 });
