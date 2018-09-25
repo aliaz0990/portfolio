@@ -22,12 +22,12 @@
 //= require imagesloaded.pkgd.min
 //= require_tree .
 
-function animatedHeader(){
+$(document).on('turbolinks:load', function() {
   runAnimatedCarousel();
   snapSVG();
-};
-
-$(document).on('turbolinks:load', function() {
-  animatedHeader();
   new WOW().init();
+
+  if($('#map').length) {
+    initMap();
+  }
 });
