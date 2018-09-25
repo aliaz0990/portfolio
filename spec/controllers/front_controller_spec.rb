@@ -23,4 +23,11 @@ describe FrontController, type: :routing do
       expect(get('/portfolio')).to route_to('front#portfolio')
     end
   end
+
+  describe 'GET contact' do
+    it 'route contact view' do
+      get :contact
+      expect(get('/contact')).to route_to('front#contact')
+    end
+  end
 end

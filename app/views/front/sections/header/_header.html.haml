@@ -31,9 +31,11 @@
             %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
             %span Portfalio
 
-        %li.col-xs-4.col-sm-2.menu-item.contact.hvr-sink{id: "contact"}
-          %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
-          %span Contacto
+        = link_to 'contact' do
+          %li#contact.col-xs-4.col-sm-2.menu-item.contact.hvr-sink{id: "contact"}
+            %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
+            %span Contacto
+
         %li.col-xs-4.col-sm-2.menu-item.feedback.hvr-sink{id: "feedback"}
           %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
           %span FeedBack
