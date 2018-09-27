@@ -35,19 +35,19 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "gmail.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: Rails.application.credentials.development[:email][:usr],
-    password: Rails.application.credentials.development[:email][:pwsd]
-  }
+  #config.action_mailer.smtp_settings = {
+  #  address: "smtp.gmail.com",
+  #  port: 587,
+  #  domain: "gmail.com",
+  #  authentication: "plain",
+  #  enable_starttls_auto: true,
+  #  user_name: Rails.application.credentials.development[:email][:usr],
+  #  password: Rails.application.credentials.development[:email][:pwsd]
+  #}
 
-  config.action_mailer.default_url_options = {host: "http://192.168.1.218:3000"}
+  #config.action_mailer.default_url_options = {host: "http://192.168.1.218:3000"}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -74,5 +74,4 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.require_master_key = true
-
 end

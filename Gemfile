@@ -17,6 +17,7 @@ gem 'jquery-turbolinks'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.1'
 gem 'sass-rails'
+gem 'simple_form'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'wow-rails'
@@ -29,7 +30,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop', require: false
   gem 'rubocop-rspec'
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :development do
