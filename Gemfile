@@ -14,6 +14,7 @@ gem 'hover-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.1'
 gem 'sass-rails'
@@ -30,7 +31,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop', require: false
   gem 'rubocop-rspec'
-  gem 'pg'
 end
 
 group :development do
@@ -42,10 +42,6 @@ end
 
 group :test do
   gem 'chromedriver-helper'
-end
-
-group :production do
-  gem 'pg'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
