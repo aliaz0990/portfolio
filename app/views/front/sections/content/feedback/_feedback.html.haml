@@ -23,4 +23,17 @@
   .col-md-12.nopadding
     .padding-50.wow.flipInX
       .row.nopadding
-        .col-md-12.nopadding
+        .col-md-2
+        .col-md-8.text-center
+          = simple_form_for @contact, url: { action: "send_mail" }, method: :post do |f|
+            .form-group
+              = f.input :name, label: false, wrapper: :bootstrap, input_html: {class: "feedback-data font-subtitle", placeholder: "Nombre", required: "required"}
+              = f.input :email, as: :email, label: false, wrapper: :bootstrap, input_html: {class: "feedback-data font-subtitle", placeholder: "Email", required: "required"}
+              = f.input :subject, label: false, wrapper: :bootstrap, input_html: {class: "feedback-data font-subtitle", placeholder: "Asunto"}
+              = f.input :content, as: :text, label: false, wrapper: :bootstrap, input_html: {class: "feedback-data font-subtitle", placeholder: "Mensaje ...."}
+            .row
+              .col-md-9
+              .col-md-3
+                = f.button :submit, class: "btn btn-default btn-email font-subtitle"
+        .col-md-2
+        .col-md-12
