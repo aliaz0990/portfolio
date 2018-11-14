@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/portfolio', to: 'front#portfolio'
   get '/contact', to: 'front#contact'
   get '/feedback', to: 'front#feedback'
-  post '/send_email', to: 'front#send_email'
+  post '/send_email', to: 'front#send_email', as: :send_email
   get '/payments', to: 'front#payments'
 end

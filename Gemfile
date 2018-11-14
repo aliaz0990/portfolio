@@ -8,7 +8,7 @@ ruby '2.5.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.2'
-gem 'font-awesome-sass', '~> 5.2.0'
+gem 'font-awesome-sass', '~> 5.5.0'
 gem 'haml-rails', '~> 1.0'
 gem 'hover-rails'
 gem 'jbuilder', '~> 2.5'

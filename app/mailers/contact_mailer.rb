@@ -1,9 +1,10 @@
 class ContactMailer < ApplicationMailer
-default from: 'any_from_address@example.com'
+  default from: 'from@example.com'
+  layout 'mailer'
 
   def contact_email(contact)
     @contact = contact
-    mail( to: 'aliriodiaz111@gmail.com',
-      subject: 'Email From my Portfolio Web')
+    mail( to: @contact.email, 
+      subject: "Thanks for write me!!")
   end
 end
