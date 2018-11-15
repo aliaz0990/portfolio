@@ -1,6 +1,6 @@
 #feedback.row.nopadding.skin
   .col-md-12.nopadding
-    .padding-50.wow.rotateIn
+    .padding-50
       .row.nopadding
         .col-md-12.nopadding
           %h3.title-text Feedback
@@ -9,7 +9,7 @@
           %p.font-p
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.
   .col-md-12.nopadding
-    .padding-page-parts.wow.rotateIn
+    .padding-page-parts
       %h3.title-text.text-center
         DROP US A LINE
       .sub-description-resume.text-center
@@ -21,7 +21,7 @@
           Gridus Website Template is fully responsive, looks and works perfect on any device.
         %p.line-red.text-center
   .col-md-12.nopadding
-    .padding-50.wow.rotateIn
+    .padding-50
       .row.nopadding
         .col-md-2
         .col-md-8.text-center
@@ -35,7 +35,7 @@
               .col-md-10
                 - if action_name == 'feedback'
                   = javascript_include_tag 'https://www.google.com/recaptcha/api.js?render=6LcI2XoUAAAAAFNVCA8l9Xs44pqX3OQVN8LK477j', defer: "defer", async: true
-                  = invisible_recaptcha_tags ui: :invisible, ajax: true
+                  = invisible_recaptcha_tags ui: :invisible, ajax: true, script: false
               .col-md-2
                 = f.button :submit, "Enviar", class: "btn btn-portfolio font-subtitle"
         .col-md-2

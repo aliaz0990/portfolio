@@ -115,3 +115,19 @@ ul {
 	background: url('bg-front.jpg');
   background-size: cover;
 }
+
+.change {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item.horizontal {
+  min-height: 60px;
+  padding-top: 14px;
+  width: 100%;
+
+  span {
+    display: inline;
+    padding-left: 15px
+  }
+}

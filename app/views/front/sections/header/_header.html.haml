@@ -17,30 +17,27 @@
             %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hola Mundo!!\", \"BoB!!\", \"Usuario!!\", \"Todo el Mundo!!\"]"}
       %ul.row.nopadding{id: "nav"}
         = link_to '/' do
-          %li#home.col-xs-4.col-sm-2.menu-item.home.hvr-sink
+          %li#home.col-xs-4.col-sm-3.menu-item.home.hvr-sink
             %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
             %span Inicio
             
         = link_to 'resume' do
-          %li#resume.col-xs-4.col-sm-2.menu-item.resume.hvr-sink
+          %li#resume.col-xs-4.col-sm-3.menu-item.resume.hvr-sink
             %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
             %span Resumen
 
         = link_to 'portfolio' do
-          %li#portfolio.col-xs-4.col-sm-2.menu-item.portfolio.hvr-sink
+          %li#portfolio.col-xs-4.col-sm-3.menu-item.portfolio.hvr-sink
             %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
             %span Portfalio
 
-        = link_to 'contact' do
-          %li#contact.col-xs-4.col-sm-2.menu-item.contact.hvr-sink{id: "contact"}
-            %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
-            %span Contacto
+        .change.col-xs-12.col-sm-3.nopadding
+          = link_to 'contact' do
+            %li#contact.col-xs-6.col-sm-6.menu-item.horizontal.contact.hvr-backward
+              %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
+              %span Contacto
 
-        =link_to 'feedback' do
-          %li#feedback.col-xs-4.col-sm-2.menu-item.feedback.hvr-sink{id: "feedback"}
-            %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
-            %span FeedBack
-            
-        %li.col-xs-4.col-sm-2.menu-item.blog.hvr-sink{id: "payments"}
-          %i.fas.fa-donate.fa-2x{"aria-hidden" => "true"}
-          %span Payments
+          =link_to 'feedback' do
+            %li#feedback.col-xs-6.col-sm-6.menu-item.horizontal.feedback.hvr-backward
+              %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
+              %span FeedBack
