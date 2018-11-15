@@ -33,7 +33,9 @@
               = f.input :content, required: true, as: :text, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Mensaje ...."}
             .row
               .col-md-10
-                = invisible_recaptcha_tags ui: :invisible, ajax: true
+                - if action_name == 'feedback'
+                  = javascript_include_tag 'https://www.google.com/recaptcha/api.js?render=6LcI2XoUAAAAAFNVCA8l9Xs44pqX3OQVN8LK477j', defer: "defer", async: true
+                  = invisible_recaptcha_tags ui: :invisible, ajax: true
               .col-md-2
                 = f.button :submit, "Enviar", class: "btn btn-portfolio font-subtitle"
         .col-md-2
