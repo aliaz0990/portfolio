@@ -33,6 +33,7 @@
               = f.input :content, required: true, as: :text, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Mensaje ...."}
             .row
               .col-md-10
+                = invisible_recaptcha_tags ui: :invisible, ajax: true
               .col-md-2
                 = f.button :submit, "Enviar", class: "btn btn-portfolio font-subtitle"
         .col-md-2

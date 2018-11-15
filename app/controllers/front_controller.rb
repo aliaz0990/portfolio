@@ -15,9 +15,9 @@ class FrontController < ApplicationController
 
   def send_email
     @contact = Contact.new(set_params)
-    if @contact.save
+    if !verify_recaptcha(model: @contact) && @contact.save
       ContactMailer.contact_email(@contact).deliver
-      redirect_to( feedback_path, notice: "Email Send, Thank You" )
+      redirect_to(feedback_path, notice: 'Your Email is sent, Thanks..!')
     else
       render action: feedback, alert: "Your email isn't send, try again!!"
     end
@@ -26,8 +26,8 @@ class FrontController < ApplicationController
   def payments; end
 
   private
+
   def set_params
     params.require(:contact).permit(:name, :email, :subject, :content)
   end
-
 end
