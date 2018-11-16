@@ -16,28 +16,46 @@
             Bienvenido
             %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hola Mundo!!\", \"BoB!!\", \"Usuario!!\", \"Todo el Mundo!!\"]"}
       %ul.row.nopadding{id: "nav"}
-        = link_to '/' do
-          %li#home.col-xs-4.col-sm-3.menu-item.home.hvr-sink
-            %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
-            %span Inicio
-            
-        = link_to 'resume' do
-          %li#resume.col-xs-4.col-sm-3.menu-item.resume.hvr-sink
-            %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
-            %span Resumen
-
-        = link_to 'portfolio' do
-          %li#portfolio.col-xs-4.col-sm-3.menu-item.portfolio.hvr-sink
-            %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
-            %span Portfalio
+        %li#home
+          = link_to '/' do
+            .col-xs-4.col-sm-3.menu-item.home.hvr-sink
+              %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
+              %span Inicio
+        %li#resume    
+          = link_to 'resume' do
+            .col-xs-4.col-sm-3.menu-item.resume.hvr-sink
+              %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
+              %span Resumen
+        %li#portfolio
+          = link_to 'portfolio' do
+            .col-xs-4.col-sm-3.menu-item.portfolio.hvr-sink
+              %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
+              %span Portfalio
 
         .change.col-xs-12.col-sm-3.nopadding
-          = link_to 'contact' do
-            %li#contact.col-xs-6.col-sm-6.menu-item.horizontal.contact.hvr-backward
-              %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
-              %span Contacto
+          %li#contact
+            = link_to 'contact' do
+              .col-xs-6.col-sm-6.menu-item.horizontal.contact.hvr-backward
+                %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
+                %span Contacto
+          %li#feedback
+            =link_to 'feedback' do
+              .col-xs-6.col-sm-6.menu-item.horizontal.feedback.hvr-backward
+                %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
+                %span FeedBack
+:javascript
+  function goToByScroll(id){
+          // Reove "link" from the ID
+        id = id.replace("link", "");
+          // Scroll
+        $('html,body').animate({
+            scrollTop: $("#"+id).offset().top},
+            'slow');
+    }
 
-          =link_to 'feedback' do
-            %li#feedback.col-xs-6.col-sm-6.menu-item.horizontal.feedback.hvr-backward
-              %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
-              %span FeedBack
+    $("#nav > li > a").click(function(e) { 
+          // Prevent a page reload when a link is pressed
+        e.preventDefault(); 
+          // Call the scroll function
+        goToByScroll($(this).attr("id"));          
+    });

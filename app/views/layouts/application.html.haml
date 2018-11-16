@@ -10,17 +10,12 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body.boxed
-    - if notice
-      .alert.alert-success.alert-dismissible{:role => "alert"}
+    - if notice || alert
+      .alert.alert-dismissible{:role => "alert", class: "alert-#{notice ? "success" : "danger"}"}
         %button.close{'aria-label' => 'Close', 'data-dismiss' => 'alert', :type => 'button'}
           %span{'aria-hidden' => 'true'} ×
-        %strong Success:
-        = notice
-    -if alert
-      .alert.alert-danger.alert-dismissible{:role => "alert"}
-        %button.close{'aria-label' => 'Close', 'data-dismiss' => 'alert', :type => 'button'}
-          %span{'aria-hidden' => 'true'} ×
-        %strong Success:
-        = alert
+        %strong #{notice ? 'Success:' : 'Warning:'}
+        = notice || alert
     = render 'front/sections/header/header'
     = yield
+    
