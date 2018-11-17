@@ -43,19 +43,3 @@
               .col-xs-6.col-sm-6.menu-item.horizontal.feedback.hvr-backward
                 %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
                 %span FeedBack
-:javascript
-  function goToByScroll(id){
-          // Reove "link" from the ID
-        id = id.replace("link", "");
-          // Scroll
-        $('html,body').animate({
-            scrollTop: $("#"+id).offset().top},
-            'slow');
-    }
-
-    $("#nav > li > a").click(function(e) { 
-          // Prevent a page reload when a link is pressed
-        e.preventDefault(); 
-          // Call the scroll function
-        goToByScroll($(this).attr("id"));          
-    });
