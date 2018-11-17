@@ -17,6 +17,7 @@ class FrontController < ApplicationController
     @contact = Contact.new(set_params)
     if !verify_recaptcha(model: @contact) && @contact.save
       ContactMailer.contact_email(@contact).deliver
+      ContactMailer.to_me(@contact).deliver
       redirect_to(feedback_path, notice: 'Your Email is sent, Thanks..!')
     else
       render action: feedback, alert: "Your email isn't send, try again!!"

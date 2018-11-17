@@ -8,4 +8,9 @@ class ContactMailer < ApplicationMailer
     @contact = contact
     mail(to: @contact.email, subject: 'Thanks for write me!!')
   end
+
+  def to_me(contact)
+    @contact = contact
+    mail(to: Rails.application.credentials.email[:personal], subject: @contact.subject)
+  end
 end
