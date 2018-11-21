@@ -20,7 +20,8 @@ class FrontController < ApplicationController
       ContactMailer.to_me(@contact).deliver
       redirect_to(feedback_path, notice: 'Your Email is sent, Thanks..!')
     else
-      render action: feedback, alert: "Your email isn't send, try again!!"
+      flash[:alert] = "Your email isn't send, try again!!"
+      render action: :feedback
     end
   end
 

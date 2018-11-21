@@ -27,9 +27,9 @@
         .col-md-8.text-center
           = simple_form_for @contact, url: { action: "send_email" }, method: :post do |f|
             .form-group
-              = f.input :name, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Nombre"}
+              = f.input :name, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Nombre", maxlength: 30}
               = f.input :email, required: true, as: :email, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Email", required: "required"}
-              = f.input :subject, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Asunto"}
+              = f.input :subject, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Asunto", maxlength: 20}
               = f.input :content, required: true, as: :text, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Mensaje ...."}
             .row
               .col-md-10
