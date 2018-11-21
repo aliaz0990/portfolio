@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe ContactMailer, type: :mailer do
-  test 'new_contact' do
+  it 'new_contact' do
     mail = ContactMailer.new_user
     assert_equal 'New contact', mail.subject
     assert_equal ['to@example.org'], mail.to
