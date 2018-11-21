@@ -24,8 +24,6 @@ class FrontController < ApplicationController
     end
   end
 
-  def payments; end
-
   private
 
   def set_params
