@@ -1,17 +1,17 @@
 #header.container-fluid.nopadding
   .row.nopadding
-    .col-md-5.col-lg-4.nopadding
+    .col-xs-12.col-md-5.col-lg-4.nopadding
       = image_tag("personas.png", class: "img-responsive img-personal")
-    .col-md-7.col-lg-8.bg-front.nopadding
+    .col-xs-12.col-md-7.col-lg-8.bg-front.nopadding
       .row.nopadding
-        .col-md-10.col-lg-10.title-head
+        .col-xs-10.col-md-10.col-lg-10.title-head
           %svg#logo
             %path
-        .col-md-2.col-lg-2.hvr-sweep-to-right.cv-icon.pd-off.hidden-xs.hidden-sm
+        .col-xs-2.col-md-2.col-lg-2.hvr-sweep-to-right.cv-icon.pd-off.hidden-xs
           %a{href: "#"}
             %i.fas.fa-file-download.fa-3x.cs-icon{"aria-hidden" => "true", title: "Descargar CV.PDF"}
       .row.nopadding
-        .col-md-12.sb-title-head
+        .col-xs-12.col-md-12.sb-title-head
           %h3 
             Bienvenido
             %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hola Mundo!!\", \"BoB!!\", \"Usuario!!\", \"Todo el Mundo!!\"]"}
