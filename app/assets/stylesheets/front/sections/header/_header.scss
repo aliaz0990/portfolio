@@ -78,7 +78,7 @@ ul {
 
   span {
     display: block;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: $semibold;
     padding-top: 10px;
     text-align: center;
@@ -128,6 +128,13 @@ ul {
 
   span {
     display: inline;
-    padding-left: 15px
+    padding-left: 15px;
+  }
+
+  @include respond-to(md) {
+    @include transition(all .3s ease);
+    span {
+      padding-left: 0px;
+    }
   }
 }
