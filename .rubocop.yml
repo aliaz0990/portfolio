@@ -26,3 +26,6 @@ Style/ClassAndModuleChildren:
 
 Metrics/BlockLength:
   ExcludedMethods: ['describe', 'context', 'shared_examples']
+
+Metrics/LineLength:
+  Max: 120

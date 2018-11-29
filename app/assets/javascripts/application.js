@@ -14,7 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery
-//= require bootstrap
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require snap-svg
 //= require isotope

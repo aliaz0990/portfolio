@@ -10,10 +10,10 @@
   padding: 17px 40px 18px;
   
   svg {
-    width: 400px;
+    width: 470px;
 
     text {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
     }
   }
 }
@@ -55,11 +55,11 @@
   padding: 23px 40px 34px;
 
   h3 {
-    font-size: 3.1rem;
+    font-size: 3.8rem;
   }
   span {
     padding-left: 2.5px;
-    font-size: 3.1rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -78,7 +78,7 @@ ul {
 
   span {
     display: block;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     font-weight: $semibold;
     padding-top: 10px;
     text-align: center;
@@ -114,4 +114,20 @@ ul {
 .bg-front {
 	background: url('bg-front.jpg');
   background-size: cover;
+}
+
+.change {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item.horizontal {
+  min-height: 60px;
+  padding-top: 14px;
+  width: 100%;
+
+  span {
+    display: inline;
+    padding-left: 15px
+  }
 }
