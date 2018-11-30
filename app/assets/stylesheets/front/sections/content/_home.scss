@@ -21,12 +21,16 @@
 }
 
 .nw-padding {
-  padding-bottom: 40px;
-  padding-top: 10px;
-
   @include respond-to(sm) {
     @include transition(all .3s ease);
-    padding-left: 0;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    padding-bottom: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -34,6 +38,18 @@
   color: $red;
   font-size: 4rem;
   padding: 0 5px;
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    font-size: 3.5rem;
+    padding-top: 10px;
+  }
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    font-size: 3.5rem;
+    padding-top: 10px;
+  }
 }
 
 .w-grey {
@@ -69,7 +85,7 @@
 }
 
 .carousel-experience {
-  padding-top: 25px;
+  padding-top: 15px;
 
   .resume-exp {
     padding-top: 15px;
@@ -93,7 +109,18 @@
 }
 
 .carousel-skills {
-  padding-top: 25px;
+  padding-top: 50px;
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  @include respond-to(md) {
+    @include transition(all .3s ease);
+    padding-top: 95px;
+  }
 
   .font-subtitle {
     font-style: bold;

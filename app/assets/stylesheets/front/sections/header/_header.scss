@@ -10,10 +10,45 @@
   padding: 17px 40px 18px;
   
   svg {
-    width: 470px;
+    @include respond-to(xl) {
+      @include transition(all .3s ease);
+      width: 550px;
+      
+      text {
+        font-size: 4.5rem;
+      }
+    }
 
-    text {
-      font-size: 4.5rem;
+    @include respond-to(lg) {
+      @include transition(all .3s ease);
+      width: 500px;
+      text {
+        font-size: 4.5rem;
+      }
+    }
+
+    @include respond-to(md) {
+      @include transition(all .3s ease);
+      width: 450px;
+      text {
+        font-size: 4.5rem;
+      }
+    }
+
+    @include respond-to(sm) {
+      @include transition(all .3s ease);
+      width: 500px;
+      text {
+        font-size: 4rem;
+      }
+    }
+
+    @include respond-to(xs) {
+      @include transition(all .3s ease);
+      width: 500px;
+      text {
+        font-size: 3.5rem;
+      }
     }
   }
 }

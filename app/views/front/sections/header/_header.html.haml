@@ -7,39 +7,39 @@
         .col-xs-10.col-md-10.col-lg-10.title-head
           %svg#logo
             %path
-        .col-xs-2.col-md-2.col-lg-2.hvr-sweep-to-right.cv-icon.pd-off.hidden-xs
+        .col-xs-2.col-md-2.col-lg-2.hvr-sweep-to-right.cv-icon.pd-off
           %a{href: "#"}
             %i.fas.fa-file-download.fa-3x.cs-icon{"aria-hidden" => "true", title: "Descargar CV.PDF"}
       .row.nopadding
         .col-xs-12.col-md-12.sb-title-head
           %h3 
-            Bienvenido
-            %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hola Mundo!!\", \"BoB!!\", \"Usuario!!\", \"Todo el Mundo!!\"]"}
+            Welcome
+            %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hello World!!\", \"BoB!!\", \"User!!\", \"Everyone!!\"]"}
       %ul.row.nopadding{id: "nav"}
         %li#home
           = link_to '/' do
             .col-xs-4.col-sm-3.menu-item.home.hvr-sink
               %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
-              %span Inicio
+              %span Home
         %li#resume    
           = link_to 'resume' do
             .col-xs-4.col-sm-3.menu-item.resume.hvr-sink
               %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
-              %span Resumen
+              %span Summary
         %li#portfolio
           = link_to 'portfolio' do
             .col-xs-4.col-sm-3.menu-item.portfolio.hvr-sink
               %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
-              %span Portfalio
+              %span Portfolio
 
         .change.col-xs-12.col-sm-3.nopadding
           %li#contact
             = link_to 'contact' do
               .col-xs-6.col-sm-6.menu-item.horizontal.contact.hvr-backward
                 %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
-                %span Contacto
+                %span Contact
           %li#feedback
             =link_to 'feedback' do
               .col-xs-6.col-sm-6.menu-item.horizontal.feedback.hvr-backward
                 %i.far.fa-comments.fa-2x{"aria-hidden" => "true"}
-                %span FeedBack
+                %span Feedback
