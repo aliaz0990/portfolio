@@ -7,6 +7,11 @@
   max-width: 85%;
   padding: 5px;
 
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+
   @include respond-to(sm) {
     @include transition(all .3s ease);
     max-width: 50%;

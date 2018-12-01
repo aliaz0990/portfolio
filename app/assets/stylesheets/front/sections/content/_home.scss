@@ -21,6 +21,12 @@
 }
 
 .nw-padding {
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
   @include respond-to(sm) {
     @include transition(all .3s ease);
     padding-bottom: 30px;
@@ -110,6 +116,11 @@
 
 .carousel-skills {
   padding-top: 50px;
+
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    padding-top: 111px;
+  }
 
   @include respond-to(lg) {
     @include transition(all .3s ease);
