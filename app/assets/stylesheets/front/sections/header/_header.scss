@@ -1,5 +1,28 @@
 .img-personal {
   min-height: 360px;
+  align-self: center;
+}
+
+.img-responsive.img-personal {
+  max-width: 85%;
+  padding: 5px;
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+}
+
+.background-header {
+  background-color: $white-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-head {
