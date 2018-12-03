@@ -12,6 +12,16 @@
     max-width: 50%;
   }
 
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    max-width: 65%;
+  }
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+
   @include respond-to(sm) {
     @include transition(all .3s ease);
     max-width: 50%;

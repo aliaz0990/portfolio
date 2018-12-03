@@ -27,6 +27,12 @@
     padding-top: 10px;
   }
 
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
   @include respond-to(sm) {
     @include transition(all .3s ease);
     padding-bottom: 30px;
@@ -120,6 +126,12 @@
   @include respond-to(xll) {
     @include transition(all .3s ease);
     padding-top: 111px;
+  }
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    padding-top: 132px;
+    padding-bottom: 66px;
   }
 
   @include respond-to(lg) {
