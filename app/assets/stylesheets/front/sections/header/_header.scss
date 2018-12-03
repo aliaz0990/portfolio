@@ -19,7 +19,7 @@
 
   @include respond-to(lg) {
     @include transition(all .3s ease);
-    max-width: 50%;
+    max-width: 85%;
   }
 
   @include respond-to(sm) {
