@@ -1,13 +1,42 @@
-#contact.row.nopadding.skin
-  %section#title.nopadding
+#feedback.row.nopadding.skin
+  .col-md-12.nopadding
     .padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text Contacto
+          %h3.title-text Contact
         .sub-description
           %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
           %p.font-p
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.
-  %section#contact-map
+            Let's start a project together, let's change the world
+  .col-md-12.nopadding
+    .padding-page-parts
+      %h3.title-text.text-center
+        DROP ME A LINE
+      .sub-description-resume.text-center
+        %h5.font-subtitle WORKING HARD AND MAKING THE SUCCESS
+        %p.font-p
+          Let's start with something simple, and finish with something incredible
+        %p.line-red.text-center
+  .col-md-12.nopadding
     .padding-50
-      #map.map
+      .row.nopadding
+        .col-md-2
+        .col-md-8.text-center
+          = simple_form_for @contact, url: { action: "send_email" }, method: :post do |f|
+            .form-group
+              = f.input :name, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Nombre", maxlength: 30}
+              = f.input :email, required: true, as: :email, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Email", required: "required"}
+              = f.input :subject, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Asunto", maxlength: 20}
+              = f.input :content, required: true, as: :text, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Mensaje ...."}
+            .row
+              .col-md-10
+                - if action_name == 'contact'
+                  = javascript_include_tag 'https://www.google.com/recaptcha/api.js?render=6LcI2XoUAAAAAFNVCA8l9Xs44pqX3OQVN8LK477j', defer: "defer", async: true
+                  = invisible_recaptcha_tags ui: :invisible, ajax: true, script: false
+              .col-md-2
+                = f.button :submit, "Enviar", class: "btn btn-portfolio font-subtitle"
+        .col-md-2
+  .col-md-12.nopadding
+    %section#contact-map
+      .padding-50
+        #map.map

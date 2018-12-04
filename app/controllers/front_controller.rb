@@ -7,9 +7,7 @@ class FrontController < ApplicationController
 
   def portfolio; end
 
-  def contact; end
-
-  def feedback
+  def contact
     @contact = Contact.new
   end
 
@@ -18,10 +16,10 @@ class FrontController < ApplicationController
     if !verify_recaptcha(model: @contact) && @contact.save
       ContactMailer.contact_email(@contact).deliver
       ContactMailer.to_me(@contact).deliver
-      redirect_to(feedback_path, notice: 'Your Email is sent, Thanks..!')
+      redirect_to(contact_path, notice: 'Your Email is sent, Thanks..!')
     else
       flash[:alert] = "Your email isn't send, try again!!"
-      render action: :feedback
+      render action: :contact
     end
   end
 
