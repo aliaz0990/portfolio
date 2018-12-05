@@ -1,5 +1,5 @@
 ---
-es-VE:
+es:
   activerecord:
     errors:
       messages:
@@ -217,7 +217,7 @@ es-VE:
       long: "%A, %d de %B de %Y a las %I:%M%p"
       short: "%d de %b a las %H:%M%p"
     pm: pm
-views:
+  views:
     header:
       welcome: 'Bienvenidos'
       link_to:

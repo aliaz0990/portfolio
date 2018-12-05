@@ -16,7 +16,12 @@
           %span{'aria-hidden' => 'true'} ×
         %strong #{notice ? 'Success:' : 'Warning:'}
         = notice || alert
-    .fas.fa-globe.fa-cs
+    .rounding
+      .fas.fa-globe.fa-cs
+      #ul.dropdown-menu{'aria-labelldby' => 'lenguageMenu'}
+        #li
+          = link_to_unless_current 'English', locale: 'en'
+          = link_to_unless_current 'Español', locale: 'es'
     = render 'front/sections/header/header'
     = yield
     = render 'front/sections/footer/footer'
