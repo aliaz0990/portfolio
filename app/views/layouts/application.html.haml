@@ -16,6 +16,7 @@
           %span{'aria-hidden' => 'true'} ×
         %strong #{notice ? 'Success:' : 'Warning:'}
         = notice || alert
+    .fas.fa-globe.fa-cs
     = render 'front/sections/header/header'
     = yield
     = render 'front/sections/footer/footer'

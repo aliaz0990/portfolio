@@ -3,16 +3,19 @@
     .padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text Summary
+          %h3.title-text
+            = t("views.content.resume.title")
         .sub-description
-          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %h5.font-subtitle 
+            = t("views.content.subtitle")
           %p.font-p
-            The experiences are the best way to improve the projects in which I have participated. With each new project, new challenges that challenge my abilities
+            = t("views.content.resume.p")
   .col-md-12.noppading.w-grey
     .padding-50
-      %h3.title-text.text-center Personal Qualities
+      %h3.title-text.text-center
+        = t("views.content.resume.personal_q.title")
       %p.font-p.text-center
-        My qualities to perform the coolest jobs of all internet
+        = t("views.content.resume.personal_q.p")
       .row.nopadding
         .padding-50
           .col-md-3
@@ -20,37 +23,42 @@
               .col-md-12
                 %i.fa.fa-cogs.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle CREATIVE
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q1")
           .col-md-3
             .row.text-center.icons-padding
               .col-md-12
                 %i.fa.fa-code.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle SELF-MOTIVATED
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q2")
           .col-md-3
             .row.text-center.icons-padding
               .col-md-12
                 %i.fa.fa-rocket.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle PUNCTUAL
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q3")
           .col-md-3
             .row.text-center.icons-padding
               .col-md-12
                 %i.fab.fa-hubspot.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle MULTITASK
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q4")
   .col-md-12.nopadding
     .padding-page-parts
       %h3.title-text.text-center
-        Professional Timeline
+        = t("views.content.resume.pro_timeline.title")
       .sub-description-resume.text-center
-        %h5.font-subtitle WORKING HARD AND MAKING THE SUCCESS
+        %h5.font-subtitle
+          = t("views.content.sub")
         %p.line-red.text-center
   .col-md-12.nopadding
     .padding-page-parts
       .education
         .text-left.title-text 
-          My Education 
+          = t("views.content.resume.pro_timeline.education.title")
         .text-left.font-subtitle 
           1996 - 2014
   .col-md-12.nopadding
@@ -66,11 +74,12 @@
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle SYSTEM ENGINEER - UNEFA
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.education.edu_1.title")
             #collapse-education1.collapse.in
               .card-body
                 %p
-                  Systems engineering is a way of interdisciplinary approach that allows to study and understand reality, with the purpose of implementing or optimizing complex systems. It can also be seen as the technological application of systems theory to the efforts of engineering, adopting throughout this work the systemic paradigm. Systems engineering integrates other disciplines and specialty groups in a team effort, forming a focused development process.
+                  = t("views.content.resume.pro_timeline.education.edu_1.p")
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
@@ -82,17 +91,18 @@
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle HIGH SCHOOL DEGREE - U.E SAN FRANCISCO JAVIER
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.education.edu_2.title")
             #collapse-education3.collapse
               .card-body
                 %p
-                  Graduated as a bachelor of science
+                  = t("views.content.resume.pro_timeline.education.edu_2.p")
 
   .col-md-12.nopadding
     .padding-page-parts
       .experience
         .text-left.title-text 
-          Work Experience
+          = t("views.content.resume.pro_timeline.work.title")
         .text-left.font-subtitle 
           2013 - NOW
   .col-md-12.nopadding
@@ -108,11 +118,12 @@
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle FULL STACK - FREELANCER
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_1.title")
             #collapse-experience1.collapse.in
               .card-body
                 %p
-                  Create new proyects and resolve issues
+                  = t("views.content.resume.pro_timeline.work.work_1.p")
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
@@ -124,11 +135,12 @@
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle JUNIOR DEVELOPMENT - SLICE GROUP
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_1.title")
             #collapse-experience2.collapse
               .card-body
                 %p
-                  Develop applications for clients according to their needs
+                  = t("views.content.resume.pro_timeline.work.work_2.p")
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
@@ -140,8 +152,9 @@
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle IT SPECIALIST - AUNO TV
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_3.title")
             #collapse-experience3.collapse
               .card-body
                 %p
-                  In charge of operations and master. everything about IT
+                  = t("views.content.resume.pro_timeline.work.work_3.p")

@@ -3,19 +3,22 @@
     .padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text Contact
+          %h3.title-text
+            = t("views.content.contact.title")
         .sub-description
-          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %h5.font-subtitle
+            = t("views.content.subtitle")
           %p.font-p
-            Let's start a project together, let's change the world
+            = t("views.content.contact.p")
   .col-md-12.nopadding
     .padding-page-parts
       %h3.title-text.text-center
-        DROP ME A LINE
+        = t("views.content.contact.subtitle")
       .sub-description-resume.text-center
-        %h5.font-subtitle WORKING HARD AND MAKING THE SUCCESS
+        %h5.font-subtitle
+          = t("views.content.sub")
         %p.font-p
-          Let's start with something simple, and finish with something incredible
+          = t("views.content.contact.p_email")
         %p.line-red.text-center
   .col-md-12.nopadding
     .padding-50
@@ -24,17 +27,17 @@
         .col-md-8.text-center
           = simple_form_for @contact, url: { action: "send_email" }, method: :post do |f|
             .form-group
-              = f.input :name, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Nombre", maxlength: 30}
+              = f.input :name, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "#{ t('views.content.contact.name') }", maxlength: 30}
               = f.input :email, required: true, as: :email, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Email", required: "required"}
-              = f.input :subject, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Asunto", maxlength: 20}
-              = f.input :content, required: true, as: :text, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "Mensaje ...."}
+              = f.input :subject, required: true, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "#{ t('views.content.contact.about') }", maxlength: 20}
+              = f.input :content, required: true, as: :text, label: false, input_html: {class: "feedback-data font-subtitle", placeholder: "#{ t('views.content.contact.message') } ...."}
             .row
               .col-md-10
                 - if action_name == 'contact'
                   = javascript_include_tag 'https://www.google.com/recaptcha/api.js?render=6LcI2XoUAAAAAFNVCA8l9Xs44pqX3OQVN8LK477j', defer: "defer", async: true
                   = invisible_recaptcha_tags ui: :invisible, ajax: true, script: false
               .col-md-2
-                = f.button :submit, "Enviar", class: "btn btn-portfolio font-subtitle"
+                = f.button :submit,  "#{ t('views.content.contact.send') }", class: "btn btn-portfolio font-subtitle"
         .col-md-2
   .col-md-12.nopadding
     %section#contact-map

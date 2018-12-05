@@ -3,11 +3,13 @@
     .padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text Portfolio
+          %h3.title-text
+            = t("views.content.portfolio.title")
         .sub-description
-          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %h5.font-subtitle 
+            = t("views.content.subtitle")
           %p.font-p
-            These are some of my projects that I have done, a bit of my experience so they can check it out, all on github as well. In search of projects that challenge my abilities
+            = t("views.content.portfolio.p")
   .col-md-12.noppading.w-grey
     .padding-50
       .container-fluid.noppading
@@ -47,10 +49,10 @@
   .col-md-12.noppading
     .padding-page-parts
       %h3.title-text.text-center
-        PROJECTS
+        = t("views.content.portfolio.subtitle")
       .sub-description-portfolio.text-center
         %h5.font-subtitle
-          WORKING HARD AND MAKING THE SUCCESS
+          = t("views.content.sub")
   .col-md-12.noppading
     .padding-page-parts
       .filters

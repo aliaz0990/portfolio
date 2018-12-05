@@ -14,26 +14,30 @@
       .row.nopadding
         .col-xs-12.col-md-12.sb-title-head
           %h3 
-            Welcome
+            = t("views.header.welcome")
             %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hello World!!\", \"BoB!!\", \"User!!\", \"Everyone!!\"]"}
       %ul.row.nopadding{id: "nav"}
         %li#home
           = link_to '/' do
             .col-xs-4.col-sm-3.menu-item.home.hvr-sink
               %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
-              %span Home
+              %span 
+                = t("views.header.link_to.home")
         %li#resume    
           = link_to 'resume' do
             .col-xs-4.col-sm-3.menu-item.resume.hvr-sink
               %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
-              %span Summary
+              %span
+                = t("views.header.link_to.summary")
         %li#portfolio
           = link_to 'portfolio' do
             .col-xs-4.col-sm-3.menu-item.portfolio.hvr-sink
               %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
-              %span Portfolio
+              %span
+                = t("views.header.link_to.portfolio")
         %li#contact
           = link_to 'contact' do
             .col-xs-4.col-sm-3.menu-item.contact.hvr-sink
               %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
-              %span Contact
+              %span
+                = t("views.header.link_to.contact")

@@ -3,73 +3,78 @@
     #animation.padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text About Me
+          %h3.title-text 
+            = t("views.content.home.about.title")
         .sub-description
-          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %h5.font-subtitle
+            = t("views.content.subtitle")
           %p.font-p
-            I want to work in awesome projects
+            = t("views.content.home.about.p")
       .row.nopadding
         .col-md-4.nopadding
           .row
             .col-sm-2.col-md-3.sm-pdn
               %i.fas.fa-tasks.fa-cs{"aria-hidden" => "true"}
             .col-sm-10.col-md-9.nw-padding
-              %h5.font-subtitle DISCIPLINE
+              %h5.font-subtitle
+                = t("views.content.home.about.second_title.subtitle1")
               %p.font-p
-                "Discipline is the soul of an army. It makes small numbers formidable; procures success to the weak, and esteem to all."
+                = t("views.content.home.about.second_title.p1")
         .col-md-4.nopadding
           .row
             .col-sm-2.col-md-3.sm-pdn
               %i.fab.fa-cloudscale.fa-cs{"aria-hidden" => "true"}
             .col-sm-10.col-md-9.nw-padding
-              %h5.font-subtitle SELF-MOTIVATED
+              %h5.font-subtitle
+                = t("views.content.home.about.second_title.subtitle2")
               %p.font-p
-                "Until you value yourself, you won’t value your time. Until you value your time, you will not do anything with it."
+                = t("views.content.home.about.second_title.p2")
         .col-md-4.nopadding
           .row
             .col-sm-2.col-md-3.sm-pdn
               %i.fas.fa-hourglass-end.fa-cs{"aria-hidden" => "true"}
             .col-sm-10.col-md-9.nw-padding
-              %h5.font-subtitle PERSEVERANCE
+              %h5.font-subtitle
+                = t("views.content.home.about.second_title.subtitle3")
               %p.font-p
-                "A failure is not always a mistake. It may simply be the best one can do under the circumstances. The real mistake is to stop trying."
+                = t("views.content.home.about.second_title.p3")
   .col-md-4.nopadding.w-grey
     .padding-50
       %h3.title-text
-        PERSONAL INFO
+        = t("views.content.home.personal_info.title")
       .personal-data
         .font-subtitle
-          Name:
+          = t("views.content.home.personal_info.name")
         .font-p
           Alirio Jose Diaz Sanchez
       .personal-data
         .font-subtitle
-          Birth:
+          = t("views.content.home.personal_info.birth")
         .font-p
           09/07/1990
       .personal-data
         .font-subtitle
-          Location:
+          = t("views.content.home.personal_info.location")
         .font-p
           Venezuela - Falcon - Punto Fijo
       .personal-data
         .font-subtitle
-          Phone:
+          = t("views.content.home.personal_info.phone")
         .font-p
           +58-424-650-78-66
       .personal-data
         .font-subtitle
-          EMAIL:
+          = t("views.content.home.personal_info.email")
         .font-p
           aliriodiaz111@gmail.com
 .row.nopadding.cyan
   .col-xs-12.col-sm-12.col-md-4.nopadding
     .padding-50
       %h3.title-text
-        Pro. Experience
+        = t("views.content.home.pro_experience.title")
       = render 'front/sections/content/home/carousel/pro_experience'
   .col-xs-12.col-sm-12.col-md-8.nopadding.blue
     .padding-50
       %h3.title-text
-        My Professional skills
+        = t("views.content.home.pro_skills.title")
       = render 'front/sections/content/home/carousel/pro_skills'
