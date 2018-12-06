@@ -129,7 +129,25 @@ main {
   }
 }
 
-.fa-globe.fa-cs {
+.rounding {
+  position: absolute;
+  z-index: 200;
+  padding: 15px;
+}
+
+.fa-globe-americas.fa-cs {
   text-align: right;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
+  padding: 0px;
+}
+
+.dropdown-menu {
+  left: 35px;
+  min-width: 85px;
+
+  li:hover {
+    a {
+      color: $red;
+    }
+  }
 }

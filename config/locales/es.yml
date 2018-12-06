@@ -1,5 +1,8 @@
 ---
 es:
+  email:
+    sent_notice: 'Tu Correo ha Sido Enviado con Exito, Gracias..!'
+    sent_alert: "Tu Correo no ha Sido Enviado, Intenta Nuevamente!!"
   activerecord:
     errors:
       messages:

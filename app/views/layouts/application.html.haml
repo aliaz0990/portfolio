@@ -14,14 +14,17 @@
       .alert.alert-dismissible{:role => "alert", class: "alert-#{notice ? "success" : "danger"}"}
         %button.close{'aria-label' => 'Close', 'data-dismiss' => 'alert', :type => 'button'}
           %span{'aria-hidden' => 'true'} ×
-        %strong #{notice ? 'Success:' : 'Warning:'}
         = notice || alert
     .rounding
-      .fas.fa-globe.fa-cs
-      #ul.dropdown-menu{'aria-labelldby' => 'lenguageMenu'}
-        #li
-          = link_to_unless_current 'English', locale: 'en'
-          = link_to_unless_current 'Español', locale: 'es'
+      .dropdown
+        %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          .fas.fa-globe-americas.fa-cs
+          %span.caret
+        %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          %li
+            = link_to 'English', locale: 'en'
+          %li
+            = link_to 'Español', locale: 'es'
     = render 'front/sections/header/header'
     = yield
     = render 'front/sections/footer/footer'
