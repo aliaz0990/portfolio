@@ -80,7 +80,7 @@
               .text-hover
                 %h5.font-p DIASAN
                 %p.font-p  website
-        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'e-commerce'}
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
           .hover-content
             = image_tag('alianzacmc.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
@@ -90,13 +90,23 @@
               .text-hover
                 %h5.font-p ALIANZACMC
                 %p.font-p  website
-        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'web-apps'}
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
           .hover-content
             = image_tag('portfolio.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
               .icon-link
-                %a{href: '#'}
+                %a{href: '/'}
                   %i.fas.fa-external-link-square-alt.fa-2x
               .text-hover
                 %h5.font-p PORTFOLIO
                 %p.font-p  website
+        .col-xs-12.col-sm-6.col-md-4.element-item.web-apps{'data-category': 'web-apps'}
+          .hover-content
+            = image_tag('notes.png', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .icon-link
+                %a{href: 'https://notepad-production.herokuapp.com/', target: '_blank'}
+                  %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p NOTES
+                %p.font-p  web-apps

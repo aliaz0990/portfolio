@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   end
 
   get '/:locale' => 'front#index'
-  match '*locale/*path', to: redirect("/#{I18n.default_locale}/#{path}"), via: :all
-  match '', to: redirect("/#{I18n.default_locale}"), via: :all
+  #match '*locale/*path', to: redirect("/#{I18n.default_locale}/#{path}"), via: :all
+  #match '', to: redirect("/#{I18n.default_locale}"), via: :all
 end
