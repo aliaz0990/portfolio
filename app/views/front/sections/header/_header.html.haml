@@ -9,7 +9,7 @@
           %svg#logo
             %path
         .col-xs-2.col-md-2.col-lg-2.hvr-sweep-to-right.cv-icon.pd-off
-          %a{href: "#"}
+          = link_to download_path do
             %i.fas.fa-file-download.fa-3x.cs-icon{"aria-hidden" => "true", title: "Descargar CV.PDF"}
       .row.nopadding
         .col-xs-12.col-md-12.sb-title-head
@@ -18,25 +18,25 @@
             %span.txt-rotate{"data-period" => "1500", "data-rotate" => "[ \"Hello World!!\", \"BoB!!\", \"User!!\", \"Everyone!!\"]"}
       %ul.row.nopadding{id: "nav"}
         %li#home
-          = link_to '/' do
+          = link_to root_path do
             .col-xs-4.col-sm-3.menu-item.home.hvr-sink
               %i.fas.fa-home.fa-2x{"aria-hidden" => "true"}
               %span 
                 = t("views.header.link_to.home")
         %li#resume    
-          = link_to 'resume' do
+          = link_to resume_path do
             .col-xs-4.col-sm-3.menu-item.resume.hvr-sink
               %i.fas.fa-user-graduate.fa-2x{"aria-hidden" => "true"}
               %span
                 = t("views.header.link_to.summary")
         %li#portfolio
-          = link_to 'portfolio' do
+          = link_to portfolio_path do
             .col-xs-4.col-sm-3.menu-item.portfolio.hvr-sink
               %i.fas.fa-layer-group.fa-2x{"aria-hidden" => "true"}
               %span
                 = t("views.header.link_to.portfolio")
         %li#contact
-          = link_to 'contact' do
+          = link_to contact_path do
             .col-xs-4.col-sm-3.menu-item.contact.hvr-sink
               %i.fas.fa-map-marked-alt.fa-2x{"aria-hidden" => "true"}
               %span

@@ -21,10 +21,10 @@
           .fas.fa-globe-americas.fa-cs
           %span.caret
         %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-          %li
-            = link_to 'English', locale: 'en'
-          %li
-            = link_to 'Español', locale: 'es'
+          %li.padding
+            = link_to 'English', {locale: 'en'}, {class: "#{'select' if params[:locale] == 'en'}"}
+          %li.padding
+            = link_to 'Español', {locale: 'es'}, {class: "#{'select' if params[:locale] == 'es'}"}
     = render 'front/sections/header/header'
     = yield
     = render 'front/sections/footer/footer'

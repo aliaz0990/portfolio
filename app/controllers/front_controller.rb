@@ -2,7 +2,6 @@
 
 class FrontController < ApplicationController
   before_action :set_i18n_locale_from_params
-
   def index; end
 
   def resume; end
@@ -24,6 +23,11 @@ class FrontController < ApplicationController
       render action: :contact
     end
   end
+
+  def download_pdf
+    send_file "#{Rails.root}/app/assets/download/cv.pdf", type: "application/pdf", x_sendfile: true
+  end
+  
 
   private
 

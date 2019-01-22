@@ -180,3 +180,15 @@ ul {
 	background: url('bg-front.jpg');
   background-size: cover;
 }
+
+li.padding {
+  padding: 0 5px;
+}
+
+.select {
+  background-color: $primary-color !important;
+  color: $white !important;
+  cursor: no-drop;
+}
+
+
