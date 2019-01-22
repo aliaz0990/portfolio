@@ -14,7 +14,7 @@
     .padding-50
       .container-fluid.noppading
         .row
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+          .col-xs-6.col-sm-6.col-md-6.col-lg-6
             .animation.text-center
               .icon
                 %i.far.fa-images.fa-cs
@@ -22,30 +22,14 @@
                 3
               .font-p
                 WEBSITES
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
-            .animation.text-center
-              .icon
-                %i.fas.fa-shopping-cart.fa-cs
-              .integers.font-subtitle 
-                0
-              .font-p
-                E-COMMERCE
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+          .col-xs-6.col-sm-6.col-md-6.col-lg-6
             .animation.text-center
               .icon
                 %i.fas.fa-laptop-code.fa-cs
               .integers.font-subtitle
-                0
+                1
               .font-p
                 WEB-APPS
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
-            .animation.text-center
-              .icon
-                %i.far.fa-object-group.fa-cs
-              .integers.font-subtitle 
-                0
-              .font-p
-                UI/UX
   .col-md-12.noppading
     .padding-page-parts
       %h3.title-text.text-center
@@ -61,12 +45,8 @@
             ALL
           %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.website'}
             WEBSITE
-          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.e-commerce'}
-            E-COMMERCE
           %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.web-apps'}
             WEB-APPS
-          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.uiux'}
-            UI/UX
   .col-md-12.nopadding
     .padding-page-parts
       .row.grid
@@ -74,9 +54,13 @@
           .hover-content
             = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
-              .icon-link
-                %a{href: 'http://diasan.herokuapp.com/', target: '_blank'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
+              .container-icon
+                .icon-link
+                  %a{href: 'http://diasan.herokuapp.com/', target: '_blank'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+                .icon-link
+                  %a{href: 'https://github.com/aliaz0990/Frontend_DIASAN', target: '_blank'}
+                    %i.fab.fa-github-square.fa-2x
               .text-hover
                 %h5.font-p DIASAN
                 %p.font-p  website
@@ -94,9 +78,13 @@
           .hover-content
             = image_tag('portfolio.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
-              .icon-link
-                %a{href: '/'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
+              .container-icon
+                .icon-link
+                  %a{href: '/'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+                .icon-link
+                  %a{href: 'https://github.com/aliaz0990/portfolio', target: '_blank'}
+                    %i.fab.fa-github-square.fa-2x
               .text-hover
                 %h5.font-p PORTFOLIO
                 %p.font-p  website
@@ -104,9 +92,13 @@
           .hover-content
             = image_tag('notes.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
-              .icon-link
-                %a{href: 'https://notepad-production.herokuapp.com/', target: '_blank'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
+              .container-icon
+                .icon-link
+                  %a{href: 'https://notepad-production.herokuapp.com/', target: '_blank'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+                .icon-link
+                  %a{href: 'https://github.com/aliaz0990/notepad', target: '_blank'}
+                    %i.fab.fa-github-square.fa-2x
               .text-hover
                 %h5.font-p NOTES
                 %p.font-p  web-apps

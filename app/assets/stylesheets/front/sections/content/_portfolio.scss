@@ -134,6 +134,7 @@
 }
 
 .icon-link {
+  padding: 5px;
   a {
     color: $white;
 
@@ -142,4 +143,10 @@
       color: $black;
     }
   }
+}
+
+.container-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

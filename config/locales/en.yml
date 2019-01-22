@@ -236,6 +236,11 @@ en:
         name: 'Name'
         about: 'About'
         message: 'Message'
+        email:
+          title: 'Thanks for writing me'
+          hi: 'Hi'
+          p1: 'I tried to response in fews hours for working together in awesome projects !!!'
+          p2: "To strive, to seek, to find, and not to yield. Tennyson"
       home:
         about: 
           title: 'About Me'
@@ -298,8 +303,4 @@ en:
     footer:
       career: 'System Engineer'
       pro: 'Web Development'
-      CV:
-        download: 'Download'
-        spanish: 'Spanish'
-        english: 'English'
       follow: 'Follow Me'

@@ -230,7 +230,7 @@ es:
         contact: 'Contacto'
     content:
       subtitle: 'PERSONA TRABAJADORA EN CAMINO AL ÉXITO...'
-      sub: 'TRABAJANDO DURO Y HACIENDO EL ÉXITO'
+      sub: 'TRABAJO DEDICADO Y HACIENDO EL ÉXITO'
       contact:
         title: 'Contacto'
         p: "Empecemos un proyecto juntos, cambiemos el mundo."
@@ -240,6 +240,11 @@ es:
         name: 'Nombre'
         about: 'Asunto'
         message: 'Mensaje'
+        email:
+          title: 'Gracias por Escribirme'
+          hi: 'Hola'
+          p1: 'Intentare responder en pocas horas para trabajar juntos en proyectos asombrosos. !!!'
+          p2: "Luchar, buscar, encontrar y no ceder. Tennyson"
       home:
         about: 
           title: 'Acerca de Mi'
@@ -302,8 +307,4 @@ es:
     footer:
       career: 'Ingeniero en Sistemas'
       pro: 'Desarrollador Web'
-      CV:
-        download: 'Descargar'
-        spanish: 'Español'
-        english: 'Ingles'
       follow: 'Sigueme'

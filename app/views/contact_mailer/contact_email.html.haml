@@ -8,9 +8,9 @@
   %body{style: "padding: 20px; font-family: 'Raleway', sans-serif" }
     .title{style: 'background: #3498db; padding: 15px;'}
       %h1{style: 'color: #dedede; text-align: center; font-size: 35px;'}
-        Thanks for writing me, #{@contact.name} !
+        = t("views.content.contact.email.title")+" #{@contact.name} "+'!'
     .content{style: 'padding: 20px 15px; background: #dedede;'}
       %p{style: 'font-size: 25px;'}
-        Hi, #{@contact.name}. I tried to response in fews hours for working together in awesome projects !!!
+        = t("views.content.contact.email.hi")+", #{@contact.name}. "+t("views.content.contact.email.p1") 
       %p{style: 'text-align: right; padding-top: 20px; font-size: 16px; font-style: oblique;'}
-        "To strive, to seek, to find, and not to yield." Tennyson
+        = t("views.content.contact.email.p2")
