@@ -25,7 +25,11 @@ class FrontController < ApplicationController
   end
 
   def download_pdf
-    send_file "#{Rails.root}/app/assets/download/cv.pdf", type: "application/pdf", x_sendfile: true
+    if params[:locale] == 'en'
+      send_file "#{Rails.root}/app/assets/download/cv_en.pdf", type: "application/pdf", x_sendfile: true
+    else
+      send_file "#{Rails.root}/app/assets/download/cv_es.pdf", type: "application/pdf", x_sendfile: true
+    end
   end
   
 

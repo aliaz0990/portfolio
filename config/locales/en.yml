@@ -218,6 +218,7 @@ en:
     pm: pm
   views:
     header:
+      download_cv: 'Download Curriculum in PDF'
       welcome: 'Welcome'
       link_to:
         home: 'Home'

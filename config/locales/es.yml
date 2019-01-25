@@ -222,6 +222,7 @@ es:
     pm: pm
   views:
     header:
+      download_cv: 'Descargar Curriculum en PDF'
       welcome: 'Bienvenidos'
       link_to:
         home: 'Inicio'
