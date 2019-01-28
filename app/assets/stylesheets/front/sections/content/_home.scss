@@ -76,8 +76,37 @@
 .personal-data {
   clear: both;
   display: block;
-  margin: 0 0 16px;
   width: 100% !important;
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    margin: 0 0 15px;
+  }
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    margin: 0 0 20px;
+  }
+
+  @include respond-to(md) {
+    @include transition(all .3s ease);
+    margin: 0 0 34px;
+  }
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    margin: 0 0 40px;
+  }
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    margin: 0 0 40px;
+  }
+
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    margin: 0 0 21px;
+  }
 
   .font-subtitle {
     display: inline-block;

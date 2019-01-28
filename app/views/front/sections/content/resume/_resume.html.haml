@@ -59,19 +59,14 @@
       .education
         .text-left.title-text 
           = t("views.content.resume.pro_timeline.education.title")
-        .text-left.font-subtitle 
-          1996 - 2014
   .col-md-12.nopadding
     .padding-50
-      .container-fluid.padding-item
-        .col-xs-1.col-sm-2.col-md-2
-          .text-right
-            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2008 - 2013
-        .col-xs-1.col-sm-1.col-md-1
-          .btn.btn-collapse{"type" => "button", "aria-controls" => "collapse-education1", "aria-expanded" => "true", "data-target" => "#collapse-education1", "data-toggle" => "collapse"}
-            %i.fas.icon
-        .col-xs-10.col-sm-9.col-md-9.border-line
+      .container-fluid.padding-item        
+        .col-xs-2.col-sm-2.col-md-2
+          .text-center
+            .btn.btn-collapse{"type" => "button", "aria-controls" => "collapse-education1", "aria-expanded" => "true", "data-target" => "#collapse-education1", "data-toggle" => "collapse"}
+              %i.fas.icon
+        .col-xs-10.col-sm-10.col-md-10.border-line
           .card
             .card-header
               .font-subtitle
@@ -81,14 +76,11 @@
                 %p
                   = t("views.content.resume.pro_timeline.education.edu_1.p")
       .container-fluid.padding-item
-        .col-xs-1.col-sm-2.col-md-2
-          .text-right
-            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              1996 - 2008
-        .col-xs-1.col-sm-1.col-md-1
-          .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-education3", 'aria-expanded': "false", 'aria-controls': "collapse-education3"}
-            %i.fas.icon
-        .col-xs-10.col-sm-9.col-md-9.border-line
+        .col-xs-2.col-sm-2.col-md-2
+          .text-center
+            .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-education3", 'aria-expanded': "false", 'aria-controls': "collapse-education3"}
+              %i.fas.icon
+        .col-xs-10.col-sm-10.col-md-10.border-line
           .card
             .card-header
               .font-subtitle
