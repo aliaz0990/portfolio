@@ -1,5 +1,43 @@
 .img-personal {
   min-height: 360px;
+  align-self: center;
+}
+
+.img-responsive.img-personal {
+  max-width: 85%;
+  padding: 5px;
+
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    max-width: 65%;
+  }
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    max-width: 82%;
+  }
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    max-width: 50%;
+  }
+}
+
+.background-header {
+  background-color: $white-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-head {
@@ -10,10 +48,45 @@
   padding: 17px 40px 18px;
   
   svg {
-    width: 470px;
+    @include respond-to(xl) {
+      @include transition(all .3s ease);
+      width: 550px;
+      
+      text {
+        font-size: 4.5rem;
+      }
+    }
 
-    text {
-      font-size: 4.5rem;
+    @include respond-to(lg) {
+      @include transition(all .3s ease);
+      width: 500px;
+      text {
+        font-size: 4.5rem;
+      }
+    }
+
+    @include respond-to(md) {
+      @include transition(all .3s ease);
+      width: 450px;
+      text {
+        font-size: 4.5rem;
+      }
+    }
+
+    @include respond-to(sm) {
+      @include transition(all .3s ease);
+      width: 500px;
+      text {
+        font-size: 4rem;
+      }
+    }
+
+    @include respond-to(xs) {
+      @include transition(all .3s ease);
+      width: 500px;
+      text {
+        font-size: 3.5rem;
+      }
     }
   }
 }
@@ -78,7 +151,7 @@ ul {
 
   span {
     display: block;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: $semibold;
     padding-top: 10px;
     text-align: center;
@@ -100,15 +173,7 @@ ul {
 }
 
 .contact {
-  background-color: $orange !important;
-}
-
-.feedback {
   background-color: $red !important;
-}
-
-.blog {
-  background-color: $yellow !important;
 }
 
 .bg-front {
@@ -116,18 +181,14 @@ ul {
   background-size: cover;
 }
 
-.change {
-  display: flex;
-  flex-direction: column;
+li.padding {
+  padding: 0 5px;
 }
 
-.menu-item.horizontal {
-  min-height: 60px;
-  padding-top: 14px;
-  width: 100%;
-
-  span {
-    display: inline;
-    padding-left: 15px
-  }
+.select {
+  background-color: $primary-color !important;
+  color: $white !important;
+  cursor: no-drop;
 }
+
+

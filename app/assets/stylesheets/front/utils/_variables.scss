@@ -4,7 +4,8 @@ $breakpoints: (
   'sm': "(min-width: 768px) and (max-width: 991px)",
   'md': "(min-width: 992px) and (max-width: 1199px)",
   'lg': "(min-width: 1200px) and (max-width: 1600px)",
-  'xl': "(min-width: 1601px) and (max-width: 2048px)",
+  'xl': "(min-width: 1601px) and (max-width: 2049px)",
+  'xll': "(min-width: 2050px) and (max-width: 2560px)"
 ) !default;
 
 // Fonts
@@ -28,7 +29,6 @@ $white-grey: #dedede;
 $green: #1abc9c;
 $blue: #3498db;
 $lilac: #9b59b6;
-$orange: #e67e22;
 $red: #e74c3c;
 $yellow: #d9a81d;
 $grey: #8f8f8f;

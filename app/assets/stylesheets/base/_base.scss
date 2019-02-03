@@ -23,7 +23,7 @@ html {
 
   @include respond-to(md) {
     @include transition(all .3s ease);
-    font-size: 6.5px;
+    font-size: 9px;
   }
 
   @include respond-to(sm) {
@@ -84,7 +84,6 @@ main {
 
 .font-p {
   font-size: 1.9rem;
-  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
@@ -93,7 +92,7 @@ main {
 }
 
 .footer-text {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: $bold;
   letter-spacing: 3px;
 }
@@ -114,4 +113,41 @@ main {
 
 .grecaptcha-badge {
   z-index:120;
+}
+
+.front-footer {
+  color: $white;
+  padding: 20px;
+  text-align: center;
+
+  img {
+    width: 100px;
+
+    @include respond-to(xs) {
+      width: 50px;
+    }
+  }
+}
+
+.rounding {
+  position: absolute;
+  z-index: 200;
+  padding: 15px;
+}
+
+.fa-globe-americas.fa-cs {
+  text-align: right;
+  font-size: 2.1rem;
+  padding: 0px;
+}
+
+.dropdown-menu {
+  left: 35px;
+  min-width: 85px;
+
+  li:hover {
+    a {
+      color: $red;
+    }
+  }
 }

@@ -4,7 +4,7 @@
 
 .sub-description {
   border-left: 3px solid $red;
-  margin: 50px 0 30px;
+  margin: 45px 0 30px;
   padding-left: 20px;
 
   h5 {
@@ -21,12 +21,28 @@
 }
 
 .nw-padding {
-  padding-bottom: 40px;
-  padding-top: 10px;
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
 
   @include respond-to(sm) {
     @include transition(all .3s ease);
-    padding-left: 0;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    padding-bottom: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -34,6 +50,18 @@
   color: $red;
   font-size: 4rem;
   padding: 0 5px;
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    font-size: 3.5rem;
+    padding-top: 10px;
+  }
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    font-size: 3.5rem;
+    padding-top: 10px;
+  }
 }
 
 .w-grey {
@@ -48,8 +76,37 @@
 .personal-data {
   clear: both;
   display: block;
-  margin: 0 0 15px;
   width: 100% !important;
+
+  @include respond-to(xs) {
+    @include transition(all .3s ease);
+    margin: 0 0 15px;
+  }
+
+  @include respond-to(sm) {
+    @include transition(all .3s ease);
+    margin: 0 0 20px;
+  }
+
+  @include respond-to(md) {
+    @include transition(all .3s ease);
+    margin: 0 0 34px;
+  }
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    margin: 0 0 40px;
+  }
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    margin: 0 0 40px;
+  }
+
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    margin: 0 0 21px;
+  }
 
   .font-subtitle {
     display: inline-block;
@@ -69,7 +126,7 @@
 }
 
 .carousel-experience {
-  padding-top: 25px;
+  padding-top: 15px;
 
   .resume-exp {
     padding-top: 15px;
@@ -93,7 +150,29 @@
 }
 
 .carousel-skills {
-  padding-top: 25px;
+  padding-top: 50px;
+
+  @include respond-to(xll) {
+    @include transition(all .3s ease);
+    padding-top: 111px;
+  }
+
+  @include respond-to(xl) {
+    @include transition(all .3s ease);
+    padding-top: 132px;
+    padding-bottom: 66px;
+  }
+
+  @include respond-to(lg) {
+    @include transition(all .3s ease);
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  @include respond-to(md) {
+    @include transition(all .3s ease);
+    padding-top: 95px;
+  }
 
   .font-subtitle {
     font-style: bold;

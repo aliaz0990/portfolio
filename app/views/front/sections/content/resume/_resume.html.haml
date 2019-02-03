@@ -3,16 +3,19 @@
     .padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text Resumen
+          %h3.title-text
+            = t("views.content.resume.title")
         .sub-description
-          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %h5.font-subtitle 
+            = t("views.content.subtitle")
           %p.font-p
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.
+            = t("views.content.resume.p")
   .col-md-12.noppading.w-grey
     .padding-50
-      %h3.title-text.text-center Cualidades Personales
+      %h3.title-text.text-center
+        = t("views.content.resume.personal_q.title")
       %p.font-p.text-center
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus.
+        = t("views.content.resume.personal_q.p")
       .row.nopadding
         .padding-50
           .col-md-3
@@ -20,176 +23,130 @@
               .col-md-12
                 %i.fa.fa-cogs.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle CREATIVE
-                %p.font-p For extreme size changes, we may want to change the layout altogether, either through a separate style sheet or, more efficiently, through a CSS media query.
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q1")
           .col-md-3
             .row.text-center.icons-padding
               .col-md-12
                 %i.fa.fa-code.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle SELF-MOTIVATED
-                %p.font-p It is possible to shrink things proportionally and rearrange elements as necessary to make everything fit (reasonably well) as a screen gets smaller.
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q2")
           .col-md-3
             .row.text-center.icons-padding
               .col-md-12
                 %i.fa.fa-rocket.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle PUNCTUAL
-                %p.font-p Below we have a few examples of responsive Web design in practice today. For many of these websites, there is more variation.
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q3")
           .col-md-3
             .row.text-center.icons-padding
               .col-md-12
                 %i.fab.fa-hubspot.fa-cs{"aria-hidden" => "true"}
               .col-md-12
-                %h5.font-subtitle MULTITASK
-                %p.font-p One major problem that needs to be solved with responsive Web design is working with images. There are a number of techniques.
+                %h5.font-subtitle
+                  = t("views.content.resume.personal_q.q4")
   .col-md-12.nopadding
     .padding-page-parts
       %h3.title-text.text-center
-        Professional Timeline
+        = t("views.content.resume.pro_timeline.title")
       .sub-description-resume.text-center
-        %h5.font-subtitle WORKING HARD AND MAKING THE SUCCESS
-        %p.font-p
-
-          Customize your website as you want using different colors and 100% free fonts. Build it from pieces and
-          blocks as simple as Lego.
-          %br
-          Gridus Website Template is fully responsive, looks and works perfect on any device.
+        %h5.font-subtitle
+          = t("views.content.sub")
         %p.line-red.text-center
   .col-md-12.nopadding
     .padding-page-parts
       .education
         .text-left.title-text 
-          My Education 
-        .text-left.font-subtitle 
-          2003 - 2012
+          = t("views.content.resume.pro_timeline.education.title")
   .col-md-12.nopadding
     .padding-50
-      .container-fluid.padding-item
-        .col-xs-1.col-sm-2.col-md-2
-          .text-right
-            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2010 - 2012
-        .col-xs-1.col-sm-1.col-md-1
-          .btn.btn-collapse{"type" => "button", "aria-controls" => "collapse-education1", "aria-expanded" => "true", "data-target" => "#collapse-education1", "data-toggle" => "collapse"}
-            %i.fas.icon
-        .col-xs-10.col-sm-9.col-md-9.border-line
+      .container-fluid.padding-item        
+        .col-xs-2.col-sm-2.col-md-2
+          .text-center
+            .btn.btn-collapse{"type" => "button", "aria-controls" => "collapse-education1", "aria-expanded" => "true", "data-target" => "#collapse-education1", "data-toggle" => "collapse"}
+              %i.fas.icon
+        .col-xs-10.col-sm-10.col-md-10.border-line
           .card
             .card-header
-              .font-subtitle MASTERS DEGREE - UNIVERSITY NAME
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.education.edu_1.title")
             #collapse-education1.collapse.in
               .card-body
                 %p
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  = t("views.content.resume.pro_timeline.education.edu_1.p")
       .container-fluid.padding-item
-        .col-xs-1.col-sm-2.col-md-2
-          .text-right
-            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2005 - 2008
-        .col-xs-1.col-sm-1.col-md-1
-          .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-education2", 'aria-expanded': "false", 'aria-controls': "collapse-education2"}
-            %i.fas.icon
-        .col-xs-10.col-sm-9.col-md-9.border-line
+        .col-xs-2.col-sm-2.col-md-2
+          .text-center
+            .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-education3", 'aria-expanded': "false", 'aria-controls': "collapse-education3"}
+              %i.fas.icon
+        .col-xs-10.col-sm-10.col-md-10.border-line
           .card
             .card-header
-              .font-subtitle BACHELORS DEGREE - UNIVERSITY NAME
-            #collapse-education2.collapse
-              .card-body
-                %p
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-
-      .container-fluid.padding-item
-        .col-xs-1.col-sm-2.col-md-2
-          .text-right
-            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2003 - 2005
-        .col-xs-1.col-sm-1.col-md-1
-          .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-education3", 'aria-expanded': "false", 'aria-controls': "collapse-education3"}
-            %i.fas.icon
-        .col-xs-10.col-sm-9.col-md-9.border-line
-          .card
-            .card-header
-              .font-subtitle GRADUATION - COLLEGE NAME
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.education.edu_2.title")
             #collapse-education3.collapse
               .card-body
                 %p
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  = t("views.content.resume.pro_timeline.education.edu_2.p")
 
   .col-md-12.nopadding
     .padding-page-parts
       .experience
         .text-left.title-text 
-          Work Experience
+          = t("views.content.resume.pro_timeline.work.title")
         .text-left.font-subtitle 
-          2009 - NOW
+          2013 - NOW
   .col-md-12.nopadding
     .padding-50
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
             .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2016 - Now
+              2017 - Now
         .col-xs-1.col-sm-1.col-md-1
           .btn.btn-collapse{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience1", 'aria-expanded': "true", 'aria-controls': "collapse-experience1"}
             %i.fas.icon
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle SENIOR DESIGNER - GALLEY LA COMPANY
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_1.title")
             #collapse-experience1.collapse.in
               .card-body
                 %p
-                  Responsibilities:
-                  Design of print collateral and websites for various clients and markets, development of new and existing brands, 3D modeling of floor and site plans.
+                  = t("views.content.resume.pro_timeline.work.work_1.p")
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
             .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2013 - 2016
+              2016 - 2017
         .col-xs-1.col-sm-1.col-md-1
           .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience2", 'aria-expanded': "false", 'aria-controls': "collapse-experience2"}
             %i.fas.icon
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle GRAPHIC DESIGNER - COMPANY NAME
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_2.title")
             #collapse-experience2.collapse
               .card-body
                 %p
-                  Responsibilities:
-                  Design of print collateral and trade show displays, redesign of company website and microsites, design and development of email blasts, development of brands for affiliate organizations.
+                  = t("views.content.resume.pro_timeline.work.work_2.p")
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
             .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2010 - 2013
+              2013 - 2014
         .col-xs-1.col-sm-1.col-md-1
           .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience3", 'aria-expanded': "false", 'aria-controls': "collapse-experience3"}
             %i.fas.icon
         .col-xs-10.col-sm-9.col-md-9.border-line
           .card
             .card-header
-              .font-subtitle IT SPECIALIST - COMPANY NAME
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_3.title")
             #collapse-experience3.collapse
               .card-body
                 %p
-                  Responsibilities:
-                  Filming and editing of promotional videos, administration of system and network integrity.
-      .container-fluid.padding-item
-        .col-xs-1.col-sm-2.col-md-2
-          .text-right
-            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2009 - 2010
-        .col-xs-1.col-sm-1.col-md-1
-          .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience4", 'aria-expanded': "false", 'aria-controls': "collapse-experience4"}
-            %i.fas.icon
-        .col-xs-10.col-sm-9.col-md-9.border-line
-          .card
-            .card-header
-              .font-subtitle GRAPHIC DESIGNER INTERN - COMPANY NAME
-            #collapse-experience4.collapse
-              .card-body
-                %p
-                  Responsibilities:
-                  Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
-
+                  = t("views.content.resume.pro_timeline.work.work_3.p")

@@ -3,54 +3,40 @@
     .padding-50
       .row.nopadding
         .col-md-12.nopadding
-          %h3.title-text Mi Portafolio
+          %h3.title-text
+            = t("views.content.portfolio.title")
         .sub-description
-          %h5.font-subtitle HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...
+          %h5.font-subtitle 
+            = t("views.content.subtitle")
           %p.font-p
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.
+            = t("views.content.portfolio.p")
   .col-md-12.noppading.w-grey
     .padding-50
       .container-fluid.noppading
         .row
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+          .col-xs-6.col-sm-6.col-md-6.col-lg-6
             .animation.text-center
               .icon
                 %i.far.fa-images.fa-cs
               .integers.font-subtitle 
-                0
+                3
               .font-p
                 WEBSITES
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
-            .animation.text-center
-              .icon
-                %i.fas.fa-shopping-cart.fa-cs
-              .integers.font-subtitle 
-                0
-              .font-p
-                E-COMMERCE
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
+          .col-xs-6.col-sm-6.col-md-6.col-lg-6
             .animation.text-center
               .icon
                 %i.fas.fa-laptop-code.fa-cs
               .integers.font-subtitle
-                0
+                1
               .font-p
                 WEB-APPS
-          .col-xs-3.col-sm-6.col-md-3.col-lg-3
-            .animation.text-center
-              .icon
-                %i.far.fa-object-group.fa-cs
-              .integers.font-subtitle 
-                0
-              .font-p
-                UI/UX
   .col-md-12.noppading
     .padding-page-parts
       %h3.title-text.text-center
-        PROJECTS
+        = t("views.content.portfolio.subtitle")
       .sub-description-portfolio.text-center
         %h5.font-subtitle
-          WORKING HARD AND MAKING THE SUCCESS
+          = t("views.content.sub")
   .col-md-12.noppading
     .padding-page-parts
       .filters
@@ -59,12 +45,8 @@
             ALL
           %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.website'}
             WEBSITE
-          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.e-commerce'}
-            E-COMMERCE
           %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.web-apps'}
             WEB-APPS
-          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.uiux'}
-            UI/UX
   .col-md-12.nopadding
     .padding-page-parts
       .row.grid
@@ -72,89 +54,51 @@
           .hover-content
             = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
+              .container-icon
+                .icon-link
+                  %a{href: 'http://diasan.herokuapp.com/', target: '_blank'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+                .icon-link
+                  %a{href: 'https://github.com/aliaz0990/Frontend_DIASAN', target: '_blank'}
+                    %i.fab.fa-github-square.fa-2x
               .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  website
-        .col-xs-12.col-sm-6.col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
-          .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
-            .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
-              .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  e-commerce
-        .col-xs-12.col-sm-6.col-md-4.element-item.web-apps{'data-category': 'web-apps'}
-          .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
-            .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
-              .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  web-app
-        .col-xs-12.col-sm-6.col-md-4.element-item.uiux{'data-category': 'uiux'}
-          .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
-            .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
-              .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  ui/ux
-        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
-          .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
-            .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
-              .text-hover
-                %h5.font-p titulo del proyecto
+                %h5.font-p DIASAN
                 %p.font-p  website
         .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
           .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            = image_tag('alianzacmc.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
               .icon-link
-                %a{href: '#'}
+                %a{href: 'http://www.alianzacmc.com/', target: '_blank'}
                   %i.fas.fa-external-link-square-alt.fa-2x
               .text-hover
-                %h5.font-p titulo del proyecto
+                %h5.font-p ALIANZACMC
                 %p.font-p  website
-        .col-xs-12.col-sm-6.col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
           .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            = image_tag('portfolio.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
+              .container-icon
+                .icon-link
+                  %a{href: '/'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+                .icon-link
+                  %a{href: 'https://github.com/aliaz0990/portfolio', target: '_blank'}
+                    %i.fab.fa-github-square.fa-2x
               .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  e-commerce
+                %h5.font-p PORTFOLIO
+                %p.font-p  website
         .col-xs-12.col-sm-6.col-md-4.element-item.web-apps{'data-category': 'web-apps'}
           .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
+            = image_tag('notes.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
             .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
+              .container-icon
+                .icon-link
+                  %a{href: 'https://notepad-production.herokuapp.com/', target: '_blank'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+                .icon-link
+                  %a{href: 'https://github.com/aliaz0990/notepad', target: '_blank'}
+                    %i.fab.fa-github-square.fa-2x
               .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  web-app
-        .col-xs-12.col-sm-6.col-md-4.element-item.uiux{'data-category': 'uiux'}
-          .hover-content
-            = image_tag('diasan.jpg', alt:'Responsive image', class: 'img-responsive animation-l')
-            .overlay.animation
-              .icon-link
-                %a{href: '#'}
-                  %i.fas.fa-external-link-square-alt.fa-2x
-              .text-hover
-                %h5.font-p titulo del proyecto
-                %p.font-p  ui/ux
+                %h5.font-p NOTES
+                %p.font-p  web-apps
