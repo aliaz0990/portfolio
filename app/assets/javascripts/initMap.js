@@ -1,13 +1,13 @@
 function initMap() {
   var citymap = {
     paraguana: {
-      center: {lat: 11.774318, lng: -70.048814},
+      center: {lat: -33.4372, lng: -70.6506},
     }
   };
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 6.5,
-    center: {lat: 11.683, lng: -68.088},
+    zoom: 9,
+    center: {lat: -33.4372, lng: -70.6506},
     mapTypedId: 'terrain'
   });
 
@@ -20,7 +20,7 @@ function initMap() {
       fillOpacity: 0.35,
       map: map,
       center: citymap[city].center,
-      radius: 20000
+      radius: 18000
     });
   }
 };
