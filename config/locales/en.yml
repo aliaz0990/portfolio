@@ -281,6 +281,7 @@ en:
           q3: 'PUNCTUAL'
           q4: 'MULTITAKS'
         pro_timeline:
+          now: 'Now'
           title: 'Professional Timeline'
           education:
             title: 'My Education'

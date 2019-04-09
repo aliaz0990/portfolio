@@ -96,14 +96,14 @@
         .text-left.title-text 
           = t("views.content.resume.pro_timeline.work.title")
         .text-left.font-subtitle 
-          2013 - NOW
+          = "2013 - "+"#{ t('views.content.resume.pro_timeline.now') }"
   .col-md-12.nopadding
     .padding-50
       .container-fluid.padding-item
         .col-xs-1.col-sm-2.col-md-2
           .text-right
             .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              2017 - Now
+              = "2017 - "+"#{ t('views.content.resume.pro_timeline.now') }"
         .col-xs-1.col-sm-1.col-md-1
           .btn.btn-collapse{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience1", 'aria-expanded': "true", 'aria-controls': "collapse-experience1"}
             %i.fas.icon

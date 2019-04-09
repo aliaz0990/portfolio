@@ -285,6 +285,7 @@ es:
           q3: 'PUNTUAL'
           q4: 'MULTI-TAREA'
         pro_timeline:
+          now: 'Nuevo'
           title: 'Mi Carrera Profesional'
           education:
             title: 'Mi Educacion'
