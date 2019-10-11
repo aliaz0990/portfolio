@@ -3,12 +3,13 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.3'
 
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '>= 1.3.2', require: false
 gem 'bootstrap-sass', '>= 3.4.1'
 gem 'coffee-rails', '~> 4.2'
-gem 'font-awesome-sass', '~> 5.2.0'
+gem 'sass-rails', '>= 3.2'
+gem 'font-awesome-sass', '~> 5.11.2'
 gem 'haml-rails', '~> 1.0'
 gem 'hover-rails'
 gem 'jbuilder', '~> 2.5'
@@ -19,7 +20,6 @@ gem 'puma', '~> 3.11'
 gem 'rack'
 gem 'rails', '~> 5.2.2.1'
 gem 'recaptcha', require: 'recaptcha/rails'
-gem 'sass-rails', '>= 3.2'
 gem 'sendgrid-ruby'
 gem 'simple_form'
 gem 'turbolinks', '~> 5'

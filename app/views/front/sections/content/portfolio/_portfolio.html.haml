@@ -14,15 +14,15 @@
     .padding-50
       .container-fluid.noppading
         .row
-          .col-xs-6.col-sm-6.col-md-6.col-lg-6
+          .col-xs-4.col-sm-4.col-md-4.col-lg-4
             .animation.text-center
               .icon
                 %i.far.fa-images.fa-cs
               .integers.font-subtitle 
-                2
+                3
               .font-p
                 WEBSITES
-          .col-xs-6.col-sm-6.col-md-6.col-lg-6
+          .col-xs-4.col-sm-4.col-md-4.col-lg-4
             .animation.text-center
               .icon
                 %i.fas.fa-laptop-code.fa-cs
@@ -30,6 +30,14 @@
                 1
               .font-p
                 WEB-APPS
+          .col-xs-4.col-sm-4.col-md-4.col-lg-4
+            .animation.text-center
+              .icon
+                %i.fas.fa-cart-arrow-down.fa-cs
+              .integers.font-subtitle
+                1
+              .font-p
+                E-COMMERCE
   .col-md-12.noppading
     .padding-page-parts
       %h3.title-text.text-center
@@ -47,6 +55,8 @@
             WEBSITE
           %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.web-apps'}
             WEB-APPS
+          %button.btn.btn-portfolio.font-p{type: 'button', 'data-filter': '.e-commerce'}
+            E-COMMERCE
   .col-md-12.nopadding
     .padding-page-parts
       .row.grid
@@ -92,3 +102,25 @@
               .text-hover
                 %h5.font-p NOTES
                 %p.font-p  web-apps
+        .col-xs-12.col-sm-6.col-md-4.element-item.e-commerce{'data-category': 'e-commerce'}
+          .hover-content
+            = image_tag('zavher.png', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .container-icon
+                .icon-link
+                  %a{href: 'https://jorgesulbaran.cl/', target: '_blank'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p ZAVHER
+                %p.font-p  e-commerce
+        .col-xs-12.col-sm-6.col-md-4.element-item.website{'data-category': 'website'}
+          .hover-content
+            = image_tag('jorgesulbaran.png', alt:'Responsive image', class: 'img-responsive animation-l')
+            .overlay.animation
+              .container-icon
+                .icon-link
+                  %a{href: 'https://jorgesulbaran.cl/', target: '_blank'}
+                    %i.fas.fa-external-link-square-alt.fa-2x
+              .text-hover
+                %h5.font-p JORGESULBARAN
+                %p.font-p  website
