@@ -90,7 +90,7 @@
 
   @include respond-to(md) {
     @include transition(all .3s ease);
-    margin: 0 0 34px;
+    margin: 0 0 43px;
   }
 
   @include respond-to(lg) {

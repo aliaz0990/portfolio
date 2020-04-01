@@ -306,6 +306,12 @@ es:
             work_3:
               title: 'Especialista en IT - AUNO TV'
               p: 'Encargado del area de operaciones e ingenieria.'
+            work_4:
+              title: 'FULL STACK - Slinky'
+              p: 'Desarrollo de Paginas y Aplicaciones'
+            work_5:
+              title: 'FULL STACK - Centro Medico Del Trabajador'
+              p: 'Desarrollador Ruby on Rails, React / Angular'
     footer:
       career: 'Ingeniero en Sistemas'
       pro: 'Desarrollador Web'

@@ -103,7 +103,7 @@
         .col-xs-1.col-sm-2.col-md-2
           .text-right
             .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
-              = "2017 - "+"#{ t('views.content.resume.pro_timeline.now') }"
+              = " #{"2019"} + #{ t('views.content.resume.pro_timeline.now') }"
         .col-xs-1.col-sm-1.col-md-1
           .btn.btn-collapse{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience1", 'aria-expanded': "true", 'aria-controls': "collapse-experience1"}
             %i.fas.icon
@@ -111,8 +111,42 @@
           .card
             .card-header
               .font-subtitle
-                = t("views.content.resume.pro_timeline.work.work_1.title")
+                = t("views.content.resume.pro_timeline.work.work_5.title")
             #collapse-experience1.collapse.in
+              .card-body
+                %p
+                  = t("views.content.resume.pro_timeline.work.work_5.p")
+      .container-fluid.padding-item
+        .col-xs-1.col-sm-2.col-md-2
+          .text-right
+            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
+              2019 - 2019
+        .col-xs-1.col-sm-1.col-md-1
+          .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience5", 'aria-expanded': "false", 'aria-controls': "collapse-experience5"}
+            %i.fas.icon
+        .col-xs-10.col-sm-9.col-md-9.border-line
+          .card
+            .card-header
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_4.title")
+            #collapse-experience5.collapse
+              .card-body
+                %p
+                  = t("views.content.resume.pro_timeline.work.work_4.p")
+      .container-fluid.padding-item
+        .col-xs-1.col-sm-2.col-md-2
+          .text-right
+            .btn.btn-danger.disabled.btn-cs.fetch-resume{role: "button", 'aria-disabled': "false"}
+              2017 - 2019
+        .col-xs-1.col-sm-1.col-md-1
+          .btn.btn-collapse.collapsed{type: "button", 'data-toggle': "collapse", 'data-target': "#collapse-experience4", 'aria-expanded': "false", 'aria-controls': "collapse-experience4"}
+            %i.fas.icon
+        .col-xs-10.col-sm-9.col-md-9.border-line
+          .card
+            .card-header
+              .font-subtitle
+                = t("views.content.resume.pro_timeline.work.work_1.title")
+            #collapse-experience4.collapse
               .card-body
                 %p
                   = t("views.content.resume.pro_timeline.work.work_1.p")

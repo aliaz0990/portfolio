@@ -302,6 +302,12 @@ en:
             work_3:
               title: 'IT SPECIALIST - AUNO TV'
               p: 'In charge of operations and master. everything about IT'
+            work_4:
+              title: 'FULL STACK - Slinky'
+              p: 'Develop applications and web pages for clients in wordpress and php'
+            work_5:
+              title: 'FULL STACK - Centro Medico Del Trabajador'
+              p: 'Developer Ruby on Rails, React / Angular'
     footer:
       career: 'System Engineer'
       pro: 'Web Development'
